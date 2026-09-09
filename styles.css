@@ -675,7 +675,10 @@ h1, h2, h3, h4, .page-title {
     .pillars-grid { grid-template-columns: 1fr; }
     
     .nav-menu {
-        position: absolute; /* Retire du flux flexbox pour ne pas centrer le bouton */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
     }
     
     .menu-toggle { display: flex; }
@@ -688,8 +691,7 @@ h1, h2, h3, h4, .page-title {
 
     .nav-list {
         display: none;
-        position: absolute;
-        top: 100%; left: 0; width: 100%;
+        width: 100%;
         background: rgba(255,255,255,0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
