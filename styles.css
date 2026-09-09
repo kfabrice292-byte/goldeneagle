@@ -673,7 +673,19 @@ h1, h2, h3, h4, .page-title {
 
 @media (max-width: 768px) {
     .pillars-grid { grid-template-columns: 1fr; }
+    
+    .nav-menu {
+        position: absolute; /* Retire du flux flexbox pour ne pas centrer le bouton */
+    }
+    
     .menu-toggle { display: flex; }
+    .menu-toggle .bar {
+        height: 2px;
+        width: 30px;
+        background-color: var(--black);
+        margin: 4px 0;
+    }
+
     .nav-list {
         display: none;
         position: absolute;
