@@ -702,3 +702,26 @@ h1, h2, h3, h4, .page-title {
     .page-title { font-size: 3rem; }
     .hero-immersive-title { font-size: 2.5rem; }
 }
+/* Social Links */
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+}
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--gold);
+    color: var(--black);
+    font-size: 1.2rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+.social-link:hover {
+    background-color: var(--black);
+    color: var(--gold);
+}
