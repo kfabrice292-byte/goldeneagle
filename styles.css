@@ -725,3 +725,24 @@ h1, h2, h3, h4, .page-title {
     background-color: var(--black);
     color: var(--gold);
 }
+/* Promo Banner */
+.promo-header {
+    width: 100%;
+    margin-top: 0; /* Header might not be fixed */
+}
+.promo-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
