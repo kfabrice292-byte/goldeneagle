@@ -31,4 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         observer.observe(el);
     });
+    // Contact Form Mailto Handler
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const subject = document.getElementById('contact-subject').value;
+            const body = document.getElementById('contact-body').value;
+            
+            const mailtoSubject = encodeURIComponent(subject);
+            const mailtoBody = encodeURIComponent("Nom: " + name + "\nEmail: " + email + "\n\nMessage:\n" + body);
+            
+            window.location.href = "mailto:info@goldeneaglebf.com?subject=" + mailtoSubject + "&body=" + mailtoBody;
+        });
+    }
 });

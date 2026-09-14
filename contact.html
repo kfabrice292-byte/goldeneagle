@@ -84,13 +84,13 @@
                 </div>
                 <div class="contact-form-col bg-cream reveal delay-200">
                     <h3>Envoyer un message</h3>
-                    <form class="magazine-form">
+                    <form class="magazine-form" id="contact-form">
                         <div class="form-row">
-                            <input type="text" placeholder="Votre nom complet" required>
-                            <input type="email" placeholder="Votre adresse email" required>
+                            <input type="text" id="contact-name" placeholder="Votre nom complet" required>
+                            <input type="email" id="contact-email" placeholder="Votre adresse email" required>
                         </div>
-                        <input type="text" placeholder="Objet de votre demande" required>
-                        <textarea rows="6" placeholder="Veuillez détailler votre projet ou votre demande ici..." required></textarea>
+                        <input type="text" id="contact-subject" placeholder="Objet de votre demande" required>
+                        <textarea id="contact-body" rows="6" placeholder="Veuillez détailler votre projet ou votre demande ici..." required></textarea>
                         <button type="submit" class="btn btn-gold w-full">Envoyer le message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
