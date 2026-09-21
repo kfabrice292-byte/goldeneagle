@@ -47,4 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = "mailto:info@goldeneaglebf.com?subject=" + mailtoSubject + "&body=" + mailtoBody;
         });
     }
+
+    // Initialize Swiper Event Gallery
+    if (document.querySelector('.event-slider') && typeof Swiper !== 'undefined') {
+        const swiper = new Swiper('.event-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
 });

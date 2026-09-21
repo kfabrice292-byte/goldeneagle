@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles.css">
     <!-- Favicon -->
@@ -144,6 +146,77 @@
         </div>
     </section>
 
+    <!-- Event Gallery -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="text-center mb-xl reveal">
+                <h2 class="section-title-clean">Event Gallery</h2>
+                <div class="gold-line"></div>
+                <p class="welcome-text" style="margin-top: 1.5rem;">Relive our latest interventions and highlights in the field through pictures.</p>
+            </div>
+            
+            <div class="swiper event-slider">
+                <div class="swiper-wrapper">
+                    <!-- Event Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="../assets/IMG-20260909-WA0017.jpg" alt="Event 1" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h3 class="event-title">Continuous Training</h3>
+                                <p class="event-desc">Capacity building for our on-site team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="../assets/IMG-20260909-WA0019.jpg" alt="Event 2" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h3 class="event-title">Blasting Operation</h3>
+                                <p class="event-desc">Meticulous preparation before intervention.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="../assets/WhatsApp Image 2026-09-09 at 13.03.41.jpeg" alt="Event 3" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h3 class="event-title">Logistics</h3>
+                                <p class="event-desc">Deployment of our intervention fleet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="../assets/formation.jpg" alt="Event 4" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h3 class="event-title">Practical Workshop</h3>
+                                <p class="event-desc">Training session on international standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Slide 5 (Citerne) -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="../assets/citerne.jpg" alt="Event 5" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h3 class="event-title">Explosives Supply</h3>
+                                <p class="event-desc">Secure transport of our products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Fat Footer -->
     <footer class="fat-footer reveal">
         <div class="container">
@@ -193,6 +266,8 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>
