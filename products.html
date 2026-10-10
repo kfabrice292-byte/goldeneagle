@@ -2,234 +2,217 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produits & Équipements | Golden Eagle</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golden Eagle | Beyond Performance</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- MAXAM Style Replica CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/golden-eagle-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="page-services">
+<body>
+
+    <!-- MAXAM Left Nav Switch (Triangle) -->
+    <div class="nav-sidebar">
+        <div class="nav-switch" id="nav-switch" title="Menu de navigation">
+            <div class="nav-switch-inner">
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The actual menu (hidden by default) -->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-menu-top">
+            <a href="index.html" class="logo-white"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle"></a>
+            <ul class="top-search-white">
+                <li><a href="#">english</a></li>
+                <li><a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-links">
+            <div class="nav-box">
+                <h4>À PROPOS DE GOLDEN EAGLE</h4>
+                <ul>
+                    <li><a href="about.html">Notre Entreprise</a></li>
+                    <li><a href="about.html#presence">Présence Globale</a></li>
+                    <li><a href="services.html">Technologie & R&D</a></li>
+                    <li><a href="about.html#brand">Notre Marque</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>INDUSTRIES & SOLUTIONS</h4>
+                <ul>
+                    <li><a href="products.html">Explosifs Civils</a></li>
+                    <li><a href="services.html">Forage & Minage</a></li>
+                    <li><a href="products.html#mmu">Unités Mobiles MMU</a></li>
+                    <li><a href="services.html#consultation">Ingénierie & Conseil</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>NOTRE ENGAGEMENT</h4>
+                <ul>
+                    <li><a href="about.html#safety">Culture de la Sécurité</a></li>
+                    <li><a href="about.html#people">Passion pour les Hommes</a></li>
+                    <li><a href="about.html#ethics">Comportement Éthique</a></li>
+                    <li><a href="about.html#environment">Protection de l'Environnement</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>PRODUITS & COTATIONS</h4>
+                <ul>
+                    <li><a href="products.html">Catalogue d'Explosifs</a></li>
+                    <li><a href="products.html">Boosters & Détonateurs</a></li>
+                    <li><a href="products.html">Demande de Cotation</a></li>
+                    <li><a href="contact.html">Support Artificiers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Nos Services</a></li>
-                    <li><a href="products.html" class="nav-link active">Produits & Équipements</a></li>
-                    <li><a href="about.html" class="nav-link">Qui sommes-nous?</a></li>
-                    <li><a href="contact.html" class="nav-link btn-header">Contactez-nous</a></li>
-                    <li class="lang-switcher">
-                        <a href="products.html" class="active">FR</a> | <a href="en/products.html">EN</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header bg-white shadow-sm">
+        <div class="top-page">
+            <a href="index.html" class="logo-color"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 40px;"></a>
+            <ul class="top-search-color">
+                <li><a href="#" style="color: var(--gray-dark);">ENGLISH</a></li>
+                <li><a href="contact.html" style="color: var(--gray-dark);"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#" style="color: var(--gray-dark);"><i class="fas fa-search"></i></a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Nos Produits & Équipements</h1>
-            <p class="page-subtitle">Des explosifs de haute qualité et des équipements de pointe pour vos opérations.</p>
+    <main class="main">
+        <section class="head-top hero-inner">
+            <div class="video-background">
+                <img src="assets/citerne.jpg" style="width:100%; height:100%; object-fit:cover;">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="head-top-content">
+                <h1 class="hero-tagline" style="font-size: 3.5rem;">PRODUITS & ÉQUIPEMENTS</h1>
+            </div>
+        </section>
+
+        <section class="page-intro" data-aos="fade-up">
+            <span class="page-intro-category">GAMME INDUSTRIELLE</span>
+            <h2>Solutions d'Abattage Haute Performance</h2>
+            <div class="gold-line"></div>
+            <p>Fabrication in-situ et distribution de matières énergétiques formulées selon les plus hauts standards de sécurité HSE. Notre flotte d'équipements spécialisés est conçue pour fiabiliser et rentabiliser vos opérations d'abattage à ciel ouvert.</p>
+        </section>
+
+        <section class="premium-grid">
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">VRAC & MATRICES</span>
+                    <img src="assets/citerne.jpg" alt="Nitrate d'Ammonium PPAN">
+                </div>
+                <div class="card-content">
+                    <h3>Nitrate d'Ammonium PPAN</h3>
+                    <p>Substance granulée poreuse haute pureté (> 99.2%) pour la fabrication d'ANFO et le dopage d'émulsions lourdes en carrière et mine d'or.</p>
+                    <a href="contact.html?prod=ppan" class="card-link">Demander une cotation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">HAUTE VÉLOCITÉ</span>
+                    <img src="assets/IMG-20260909-WA0019.jpg" alt="Boosters Pentolite">
+                </div>
+                <div class="card-content">
+                    <h3>Boosters Pentolite</h3>
+                    <p>Charges relais haute densité garantissant une vitesse de détonation supérieure à 7 500 m/s pour l'amorçage fiable des émulsions insensibles.</p>
+                    <a href="contact.html?prod=boosters" class="card-link">Demander une cotation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">UNITÉ MOBILE</span>
+                    <img src="assets/WhatsApp Image 2026-09-09 at 13.03.41.jpeg" alt="Camions MMU Tout-Terrain">
+                </div>
+                <div class="card-content">
+                    <h3>Camions MMU Tout-Terrain</h3>
+                    <p>Unités mobiles lourdes de fabrication continue d'émulsion en vrac avec pompage mécanisé et sensibilisation chimique directe.</p>
+                    <a href="contact.html?prod=mmu" class="card-link">Réserver une unité <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="destacados-img-text bg-gray-70" data-aos="fade-right">
+            <div class="destacados-img" data-aos="fade-right">
+                <img src="assets/topographie-gps.jpg" alt="Géomatique">
+            </div>
+            <div class="destacados-content bg-dark" data-aos="fade-left">
+                <h2 class="white">Stations GPS RTK & Drones</h2>
+                <p class="white">Équipements topographiques différentiels pour l'implantation millimétrique des trous de mine, le relevé de front et le calcul de volume.<br><br>Drones photogrammétriques durcis pour mine et logiciels de calcul de cubatures inclus.</p>
+                <a href="contact.html" class="btn btn-gold">Commander du Matériel</a>
+            </div>
         </div>
-    </section>
+</main>
 
-    <!-- Services Detailed List -->
-    <section class="services-detailed section-padding">
-        <div class="container">
-
-            <div class="text-center mb-xl reveal">
-                <h2 class="section-title-clean">Explosifs pour l'Industrie Minière</h2>
-                <div class="gold-line"></div>
-                <p class="welcome-text">Des produits explosifs à part entière, fabriqués selon les plus hauts standards de sécurité.</p>
-            </div>
-
-            <div class="products-grid mb-xl">
-                <!-- Product 1 -->
-                <div class="product-card reveal">
-                    <div class="product-badge">Explosif</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/citerne.jpg" alt="Nitrate d'Ammonium">
-                    </div>
-                    <div class="product-content">
-                        <h3>Nitrate d'Ammonium</h3>
-                        <p>Substance de base pour la fabrication d'explosifs miniers, assurant une puissance de tir optimale.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Haute pureté</li>
-                            <li><i class="fas fa-check"></i> Rendement maximal</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Commander</a>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product-card reveal delay-100">
-                    <div class="product-badge">Haute Puissance</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/formation.jpg" alt="Boosters & Magnum Boosters">
-                    </div>
-                    <div class="product-content">
-                        <h3>Boosters & Magnum Boosters</h3>
-                        <p>Conçus pour l'amorçage efficace d'explosifs insensibles, garantissant une détonation sûre.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Amorçage fiable</li>
-                            <li><i class="fas fa-check"></i> Divers grammages</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Commander</a>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product-card reveal delay-200">
-                    <div class="product-badge">Accessoire de tir</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/WhatsApp-Image-2019-09-25-at-16.15.16-1.jpeg" alt="Détonateurs et Cordeaux">
-                    </div>
-                    <div class="product-content">
-                        <h3>Détonateurs & Cordeaux</h3>
-                        <p>Détonateurs électriques instantanés et cordeaux détonateurs pour une précision sans faille.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Précision temporelle</li>
-                            <li><i class="fas fa-check"></i> Sécurité optimale</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mb-xl reveal mt-xl">
-                <h2 class="section-title-clean">Équipements & Accessoires</h2>
-                <div class="gold-line"></div>
-                <p class="welcome-text">Une sélection rigoureuse d'équipements de pointe pour optimiser vos opérations de terrain.</p>
-            </div>
-
-            <div class="products-grid mb-xl">
-                <!-- Equip 1 -->
-                <div class="product-card reveal">
-                    <div class="product-badge" style="background-color: var(--black);">Ingénierie</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/Camion-de-dynamitage-1024x768.jpeg" alt="Unité de Transformation Mobile">
-                    </div>
-                    <div class="product-content">
-                        <h3>Unité de Transformation Mobile (MMU)</h3>
-                        <p>Camions spécialisés pour le mélange et le chargement d'explosifs directement sur site minier.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Chargement sécurisé</li>
-                            <li><i class="fas fa-check"></i> Technologie de pointe</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Demander un devis</a>
-                    </div>
-                </div>
-
-                <!-- Equip 2 -->
-                <div class="product-card reveal delay-100">
-                    <div class="product-badge" style="background-color: var(--black);">Contrôle</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/IMG-20260909-WA0019.jpg" alt="Télécommandes de tir">
-                    </div>
-                    <div class="product-content">
-                        <h3>Exploseurs & Télécommandes</h3>
-                        <p>Systèmes d'initiation électroniques (Exploseurs) pour un déclenchement des tirs à distance.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Portée étendue</li>
-                            <li><i class="fas fa-check"></i> Protection cryptée</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Demander un devis</a>
-                    </div>
-                </div>
-
-                <!-- Equip 3 -->
-                <div class="product-card reveal delay-200">
-                    <div class="product-badge" style="background-color: var(--black);">Topographie</div>
-                    <div class="product-img-wrapper">
-                        <img src="assets/topographie-gps.jpg" alt="Drones et GPS">
-                    </div>
-                    <div class="product-content">
-                        <h3>Drones & GPS de Précision</h3>
-                        <p>Solutions topographiques avancées pour le levé de terrain, calcul de volumes et surveillance.</p>
-                        <ul class="product-features">
-                            <li><i class="fas fa-check"></i> Topographie 3D</li>
-                            <li><i class="fas fa-check"></i> Modélisation de terrain</li>
-                        </ul>
-                        <a href="contact.html" class="product-btn">Demander un devis</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-xl reveal">
-                <a href="contact.html" class="btn btn-gold">Voir notre catalogue complet <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Fat Footer -->
-    <footer class="fat-footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <img src="assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL est spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div>
+                    <h4>À PROPOS DE GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Nos Services</a></li>
-                        <li><a href="products.html">Produits & Équipements</a></li>
-                        <li><a href="about.html">Qui sommes-nous ?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Notre entreprise</a></li>
+                        <li><a href="about.html#presence">Présence globale</a></li>
+                        <li><a href="services.html">Technologie</a></li>
+                        <li><a href="about.html#brand">Notre marque</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
+                <div>
+                    <h4>INDUSTRIES & SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Explosifs Civils</a></li>
+                        <li><a href="services.html">Forage & Minage</a></li>
+                        <li><a href="services.html#topographie">Etudes & Modélisation</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Restez informé de nos dernières actualités sur le terrain.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div>
+                    <h4>NOTRE ENGAGEMENT</h4>
+                    <ul>
+                        <li><a href="about.html#safety">Culture de la sécurité</a></li>
+                        <li><a href="about.html#people">Passion pour les hommes</a></li>
+                        <li><a href="about.html#environment">Environnement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="width: 150px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <p>Une entreprise de référence spécialisée dans le forage et le minage civil.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Horaires : Lundi-Vendredi, 08h00-16h00</a>
+                <div>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</div>
+                <div>
+                    <a href="about.html" style="color:var(--gray-text); margin-right: 15px;">Mentions légales</a>
+                    <a href="about.html" style="color:var(--gray-text);">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 50
+                });
+            }
+        });
+    </script>
 </body>
 </html>

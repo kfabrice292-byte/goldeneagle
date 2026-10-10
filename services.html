@@ -2,213 +2,212 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services | Golden Eagle</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golden Eagle | Beyond Performance</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- MAXAM Style Replica CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/golden-eagle-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="page-services">
+<body>
+
+    <!-- MAXAM Left Nav Switch (Triangle) -->
+    <div class="nav-sidebar">
+        <div class="nav-switch" id="nav-switch" title="Menu de navigation">
+            <div class="nav-switch-inner">
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The actual menu (hidden by default) -->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-menu-top">
+            <a href="index.html" class="logo-white"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle"></a>
+            <ul class="top-search-white">
+                <li><a href="#">english</a></li>
+                <li><a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-links">
+            <div class="nav-box">
+                <h4>À PROPOS DE GOLDEN EAGLE</h4>
+                <ul>
+                    <li><a href="about.html">Notre Entreprise</a></li>
+                    <li><a href="about.html#presence">Présence Globale</a></li>
+                    <li><a href="services.html">Technologie & R&D</a></li>
+                    <li><a href="about.html#brand">Notre Marque</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>INDUSTRIES & SOLUTIONS</h4>
+                <ul>
+                    <li><a href="products.html">Explosifs Civils</a></li>
+                    <li><a href="services.html">Forage & Minage</a></li>
+                    <li><a href="products.html#mmu">Unités Mobiles MMU</a></li>
+                    <li><a href="services.html#consultation">Ingénierie & Conseil</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>NOTRE ENGAGEMENT</h4>
+                <ul>
+                    <li><a href="about.html#safety">Culture de la Sécurité</a></li>
+                    <li><a href="about.html#people">Passion pour les Hommes</a></li>
+                    <li><a href="about.html#ethics">Comportement Éthique</a></li>
+                    <li><a href="about.html#environment">Protection de l'Environnement</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>PRODUITS & COTATIONS</h4>
+                <ul>
+                    <li><a href="products.html">Catalogue d'Explosifs</a></li>
+                    <li><a href="products.html">Boosters & Détonateurs</a></li>
+                    <li><a href="products.html">Demande de Cotation</a></li>
+                    <li><a href="contact.html">Support Artificiers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link active">Nos Services</a></li>
-                    <li><a href="products.html" class="nav-link">Produits & Équipements</a></li>
-                    <li><a href="about.html" class="nav-link">Qui sommes-nous?</a></li>
-                    <li><a href="contact.html" class="nav-link btn-header">Contactez-nous</a></li>
-                    <li class="lang-switcher">
-                        <a href="services.html" class="active">FR</a> | <a href="en/services.html">EN</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header bg-white shadow-sm">
+        <div class="top-page">
+            <a href="index.html" class="logo-color"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 40px;"></a>
+            <ul class="top-search-color">
+                <li><a href="#" style="color: var(--gray-dark);">ENGLISH</a></li>
+                <li><a href="contact.html" style="color: var(--gray-dark);"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#" style="color: var(--gray-dark);"><i class="fas fa-search"></i></a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Notre Expertise</h1>
-            <p class="page-subtitle">Des solutions industrielles de bout en bout.</p>
-        </div>
-    </section>
+    <main class="main">
+        <section class="head-top hero-inner">
+            <div class="video-background">
+                <img src="assets/Camion-de-dynamitage-1024x768.jpeg" style="width:100%; height:100%; object-fit:cover; transform: scaleX(-1);">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="head-top-content">
+                <h1 class="hero-tagline" style="font-size: 3.5rem;">NOS SERVICES</h1>
+            </div>
+        </section>
 
-    <!-- Services Detailed List -->
-    <section class="services-detailed section-padding">
-        <div class="container">
-            <!-- Service 1 -->
-            <div class="service-row reveal">
-                <div class="service-row-img">
-                    <img src="assets/Camion-de-dynamitage-1024x768.jpeg" alt="Forage & Dynamitage">
+        <section class="page-intro" data-aos="fade-up">
+            <span class="page-intro-category">INGÉNIERIE DE PRÉCISION</span>
+            <h2>Expertise Technique & Opérationnelle</h2>
+            <div class="gold-line"></div>
+            <p>Notre équipe d'ingénieurs déploie une approche scientifique pour la conception de vos plans de tirs, l'audit de vos résultats et la modélisation 3D de vos gisements.</p>
+        </section>
+
+        <section class="premium-grid">
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">FORAGE</span>
+                    <img src="assets/Camion-de-dynamitage-1024x768.jpeg" alt="Forage et Minage">
                 </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Forage & Dynamitage</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>GOLDEN EAGLE met à la disposition de sa clientèle une équipe expérimentée et des équipements performants, et utilise plusieurs techniques éprouvées de forage et de dynamitage pour répondre à l'ensemble de ses besoins.</p>
+                <div class="card-content">
+                    <h3>Forage & Dynamitage</h3>
+                    <p>Conception de plans de tir informatisés pour maximiser la fragmentation tout en contrôlant rigoureusement les vibrations et les projections.</p>
+                    <a href="contact.html" class="card-link">Solliciter une étude <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Service 2 -->
-            <div class="service-row reverse reveal">
-                <div class="service-row-img">
-                    <img src="assets/citerne.jpg" alt="Substances explosives">
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">MODÉLISATION</span>
+                    <img src="assets/topographie-gps.jpg" alt="Topographie et Drones 3D">
                 </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Fourniture, Fabrication & Vente de substances explosives</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Selon la demande du client, nous vendons, livrons et fabriquons des substances explosives tout en suivant les règles de l'art, en respectant rigoureusement les normes de sécurité et les exigences techniques du terrain. <br><br><strong>Produits fournis et fabriqués :</strong> Booster, Magnum Booster, Nitrate d’Ammonium, IED Détonateur Electrique Instantané, cordeaux détonateurs, Splitex, accessoires de surface Trun line, Anfex, Emulsion S100.</p>
-                </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-row reveal">
-                <div class="service-row-img">
-                    <!-- New Image Used Here -->
-                    <img src="assets/IMG-20260909-WA0017.jpg" alt="Consultation">
-                </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Consultation & Services techniques</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Nous évaluons périodiquement les résultats de nos travaux de forage et de dynamitage sur les sites de nos partenaires. Ces évaluations permettent d'améliorer la fragmentation après dynamitage et d'optimiser le ratio coût/qualité.</p>
+                <div class="card-content">
+                    <h3>Topographie & Drones 3D</h3>
+                    <p>Relevés photogrammétriques par drone et modélisation des fronts de taille pour calculer avec précision les volumes de matériaux abattus.</p>
+                    <a href="contact.html" class="card-link">Découvrir le service <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Service 4 -->
-            <div class="service-row reverse reveal">
-                <div class="service-row-img">
-                    <img src="assets/formation.jpg" alt="Formation en mine">
+            <div class="premium-card">
+                <div class="card-img">
+                    <span class="card-badge">CONSEIL</span>
+                    <img src="assets/formation.jpg" alt="Audit et Formation">
                 </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Évaluation des risques professionnels</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>GOLDEN EAGLE dispose d'une technologie de pointe dans l'évaluation des risques liés au rendement, à la faisabilité opérationnelle et à la sécurisation globale des chantiers.</p>
-                </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-row reveal">
-                <div class="service-row-img">
-                    <img src="assets/topographie-gps.jpg" alt="Topographie" style="object-position: top;">
-                </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Topographie</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Mise à disposition d'équipements topographiques de dernière génération afin d'effectuer des travaux de levé, d'implantation et de calculs de volumes précis.</p>
+                <div class="card-content">
+                    <h3>Audit & Formation</h3>
+                    <p>Évaluation de la fragmentation, optimisation des coûts d'extraction et formations pratiques dispensées par nos experts internationaux.</p>
+                    <a href="contact.html" class="card-link">Planifier un audit <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+        </section>
+        
+        <section class="cta-banner">
+            <h2>Prêt à optimiser vos rendements ?</h2>
+            <p>Nos experts sont à votre disposition pour réaliser un audit complet de vos chantiers actuels ou futurs.</p>
+            <a href="contact.html" class="btn btn-gold">CONTACTEZ-NOUS DÈS AUJOURD'HUI</a>
+        </section>
+</main>
 
-            <!-- Service 6 -->
-            <div class="service-row reverse reveal">
-                <div class="service-row-img">
-                    <!-- New Image Used Here -->
-                    <img src="assets/WhatsApp%20Image%202026-09-09%20at%2013.03.41.jpeg" alt="Formation spécialisée">
-                </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Formation spécialisée</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Formations dispensées par des professionnels de terrain, alliant pédagogie pratique et transmission des dernières techniques du secteur (équipes de gradin, forage & dynamitage, HSE, gestion des risques).</p>
-                </div>
-            </div>
-
-            <!-- Service 7 -->
-            <div class="service-row reveal">
-                <div class="service-row-img">
-                    <img src="assets/WhatsApp-Image-2019-09-25-at-16.15.16-1.jpeg" alt="Transport & Logistique">
-                </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Transport & Logistique sécurisée</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Acheminement sécurisé des produits et substances explosives depuis les usines ou ports jusqu'aux sites miniers sous escorte armée (Police / Gendarmerie nationale), en stricte conformité avec la réglementation en vigueur.</p>
-                </div>
-            </div>
-
-            <!-- Service 8 -->
-            <div class="service-row reverse reveal">
-                <div class="service-row-img">
-                    <img src="assets/citerne.jpg" alt="Vente d'équipements">
-                </div>
-                <div class="service-row-content">
-                    <h2 class="service-title-lg">Vente d'équipements, outillage & maintenance</h2>
-                    <div class="gold-line align-left"></div>
-                    <p>Fourniture d'équipements, pompes, accessoires et outillages industriels de haute qualité répondant aux exigences sévères des environnements miniers et de génie civil. <br><br><strong>Catalogue d'équipements :</strong> Exploseurs, Outils de dynamitage performants, Couteaux, Équipements de Protection Individuelle (EPI), Drones, GPS, Outils et pièces de foreuses, Sirènes, etc.</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-xl reveal">
-                <a href="contact.html" class="btn btn-gold">Solliciter nos services <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Fat Footer -->
-    <footer class="fat-footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <img src="assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL est spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div>
+                    <h4>À PROPOS DE GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Nos Services</a></li>
-                        <li><a href="products.html">Produits & Équipements</a></li>
-                        <li><a href="about.html">Qui sommes-nous ?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Notre entreprise</a></li>
+                        <li><a href="about.html#presence">Présence globale</a></li>
+                        <li><a href="services.html">Technologie</a></li>
+                        <li><a href="about.html#brand">Notre marque</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
+                <div>
+                    <h4>INDUSTRIES & SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Explosifs Civils</a></li>
+                        <li><a href="services.html">Forage & Minage</a></li>
+                        <li><a href="services.html#topographie">Etudes & Modélisation</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Restez informé de nos dernières actualités sur le terrain.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div>
+                    <h4>NOTRE ENGAGEMENT</h4>
+                    <ul>
+                        <li><a href="about.html#safety">Culture de la sécurité</a></li>
+                        <li><a href="about.html#people">Passion pour les hommes</a></li>
+                        <li><a href="about.html#environment">Environnement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="width: 150px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <p>Une entreprise de référence spécialisée dans le forage et le minage civil.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Horaires : Lundi-Vendredi, 08h00-16h00</a>
+                <div>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</div>
+                <div>
+                    <a href="about.html" style="color:var(--gray-text); margin-right: 15px;">Mentions légales</a>
+                    <a href="about.html" style="color:var(--gray-text);">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 50
+                });
+            }
+        });
+    </script>
 </body>
 </html>

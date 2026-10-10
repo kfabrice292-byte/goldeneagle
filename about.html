@@ -2,180 +2,206 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui sommes-nous ? | Golden Eagle</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golden Eagle | Beyond Performance</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- MAXAM Style Replica CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/golden-eagle-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="page-about">
+<body>
+
+    <!-- MAXAM Left Nav Switch (Triangle) -->
+    <div class="nav-sidebar">
+        <div class="nav-switch" id="nav-switch" title="Menu de navigation">
+            <div class="nav-switch-inner">
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The actual menu (hidden by default) -->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-menu-top">
+            <a href="index.html" class="logo-white"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle"></a>
+            <ul class="top-search-white">
+                <li><a href="#">english</a></li>
+                <li><a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-links">
+            <div class="nav-box">
+                <h4>À PROPOS DE GOLDEN EAGLE</h4>
+                <ul>
+                    <li><a href="about.html">Notre Entreprise</a></li>
+                    <li><a href="about.html#presence">Présence Globale</a></li>
+                    <li><a href="services.html">Technologie & R&D</a></li>
+                    <li><a href="about.html#brand">Notre Marque</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>INDUSTRIES & SOLUTIONS</h4>
+                <ul>
+                    <li><a href="products.html">Explosifs Civils</a></li>
+                    <li><a href="services.html">Forage & Minage</a></li>
+                    <li><a href="products.html#mmu">Unités Mobiles MMU</a></li>
+                    <li><a href="services.html#consultation">Ingénierie & Conseil</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>NOTRE ENGAGEMENT</h4>
+                <ul>
+                    <li><a href="about.html#safety">Culture de la Sécurité</a></li>
+                    <li><a href="about.html#people">Passion pour les Hommes</a></li>
+                    <li><a href="about.html#ethics">Comportement Éthique</a></li>
+                    <li><a href="about.html#environment">Protection de l'Environnement</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>PRODUITS & COTATIONS</h4>
+                <ul>
+                    <li><a href="products.html">Catalogue d'Explosifs</a></li>
+                    <li><a href="products.html">Boosters & Détonateurs</a></li>
+                    <li><a href="products.html">Demande de Cotation</a></li>
+                    <li><a href="contact.html">Support Artificiers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Nos Services</a></li>
-                    <li><a href="products.html" class="nav-link">Produits & Équipements</a></li>
-                    <li><a href="about.html" class="nav-link active">Qui sommes-nous?</a></li>
-                    <li><a href="contact.html" class="nav-link btn-header">Contactez-nous</a></li>
-                    <li class="lang-switcher">
-                        <a href="about.html" class="active">FR</a> | <a href="en/about.html">EN</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header bg-white shadow-sm">
+        <div class="top-page">
+            <a href="index.html" class="logo-color"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 40px;"></a>
+            <ul class="top-search-color">
+                <li><a href="#" style="color: var(--gray-dark);">ENGLISH</a></li>
+                <li><a href="contact.html" style="color: var(--gray-dark);"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#" style="color: var(--gray-dark);"><i class="fas fa-search"></i></a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header about-banner">
-        <div class="container">
-            <h1 class="page-title">Notre Histoire</h1>
-            <p class="page-subtitle">Renforcer les capacités des entreprises burkinabè.</p>
+    <main class="main">
+        <section class="head-top hero-inner">
+            <div class="video-background">
+                <img src="assets/qui sommes nous bande.jpg" style="width:100%; height:100%; object-fit:cover;">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="head-top-content">
+                <h1 class="hero-tagline" style="font-size: 3.5rem;">NOTRE ENTREPRISE</h1>
+            </div>
+        </section>
+
+        <section class="page-intro" data-aos="fade-up">
+            <span class="page-intro-category">À PROPOS DE NOUS</span>
+            <h2>L'Excellence comme Standard</h2>
+            <div class="gold-line"></div>
+            <p>Golden Eagle est une entreprise de référence dans la région ouest-africaine. Notre mission est d'accroître durablement la productivité et la sécurité de l'industrie extractive grâce à l'ingénierie appliquée.</p>
+        </section>
+
+        <div class="destacados-img-text bg-gray-70" data-aos="fade-right">
+            <div class="destacados-img" data-aos="fade-right">
+                <img src="assets/IMG-20260909-WA0019.jpg" alt="Historique">
+            </div>
+            <div class="destacados-content bg-dark" data-aos="fade-left">
+                <h2 class="white">Expertise de Terrain</h2>
+                <p class="white">GOLDEN EAGLE est spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage de haute précision.<br><br>Dans le souci constant de répondre aux exigences HSE, nous fournissons des études techniques approfondies d'évaluation des risques.</p>
+            </div>
         </div>
-    </section>
 
-    <!-- About Content -->
-    <section class="about-content-section section-padding">
-        <div class="container">
-            <div class="about-magazine-grid">
-                <div class="about-text-col reveal">
-                    <h2 class="editorial-title text-black">GOLDEN EAGLE SARL</h2>
-                    <div class="gold-line align-left"></div>
-                    <p class="lead-p">GOLDEN EAGLE est une Société à Responsabilité Limitée (SARL) spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage.</p>
-                    <p>Nous sommes une entreprise assurant des formations pratiques dans le domaine des BTP, mines et carrières, et des sociétés industrielles en raison de notre solide expérience dans un secteur en pleine expansion.</p>
-                    <p>Dans le souci de répondre aux normes et exigences internationales, Golden Eagle accompagne ses clients en leur fournissant des consultations et études en évaluation des risques, forage et dynamitage, et en Santé, Hygiène et Environnement.</p>
-                    <p><strong>Notre Capital Humain :</strong> Le Directeur général s'est entouré d'une équipe dynamique et professionnelle. Le recrutement se fait avec des critères de sélection élevés. Notre force se trouve dans le partage de connaissances et d'expériences à tous les niveaux, appuyé par des formations certifiées périodiques.</p>
-                    <p><strong>Nos Infrastructures :</strong> L'entreprise dispose de trois sites principaux, dont le bureau et le garage au Burkina Faso, ainsi qu'un bureau en Côte d'Ivoire, offrant le confort et la sécurité nécessaires aux employés.</p>
-                    
-                    <div class="core-values mt-lg">
-                        <div class="value-item">
-                            <span class="value-icon"><i class="fas fa-eye" style="color: var(--gold);"></i></span>
-                            <h4>Vision</h4>
-                            <p>Accroître la productivité des entreprises nationales afin d'améliorer leur performance.</p>
-                        </div>
-                        <div class="value-item">
-                            <span class="value-icon"><i class="fas fa-bullseye" style="color: var(--gold);"></i></span>
-                            <h4>Mission</h4>
-                            <p>Donner de la valeur ajoutée aux entreprises et au capital humain dans le domaine des mines et carrières, du BTP et des activités similaires.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-img-col reveal delay-200">
-                    <div class="img-collage">
-                        <!-- Using new images here -->
-                        <img src="assets/IMG-20260909-WA0019.jpg" alt="Chantier" class="collage-img-1">
-                        <img src="assets/IMG-20260909-WA0017.jpg" alt="Consultation" class="collage-img-2">
-                    </div>
-                </div>
+        <div class="destacados-img-text" data-aos="fade-right">
+            <div class="destacados-img order-2" data-aos="fade-right">
+                <img src="assets/equipe-golden-eagle-1024x768.jpeg" alt="Vision">
             </div>
-            
-            <div class="pillars-section mt-xl">
-                <div class="section-heading reveal">
-                    <h2 class="editorial-title">NOS PILIERS FONDAMENTAUX</h2>
-                    <div class="gold-line"></div>
-                </div>
-                <div class="editorial-grid" style="grid-template-columns: repeat(4, 1fr);">
-                    <div class="ed-card text-center reveal">
-                        <i class="fas fa-crown" style="font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--black); font-size: 1.5rem; margin-bottom: 1rem;">Majestueux</h3>
-                        <p style="font-family: var(--font-serif); font-style: italic;">« Nous respectons notre engagement. »</p>
-                    </div>
-                    <div class="ed-card text-center reveal delay-100">
-                        <i class="fas fa-search" style="font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--black); font-size: 1.5rem; margin-bottom: 1rem;">Minutieux</h3>
-                        <p style="font-family: var(--font-serif); font-style: italic;">« Nous prenons en compte tous les détails dans nos projets. »</p>
-                    </div>
-                    <div class="ed-card text-center reveal delay-200">
-                        <i class="fas fa-crosshairs" style="font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--black); font-size: 1.5rem; margin-bottom: 1rem;">Précis</h3>
-                        <p style="font-family: var(--font-serif); font-style: italic;">« La précision est un facteur déterminant de notre activité. »</p>
-                    </div>
-                    <div class="ed-card text-center reveal delay-300">
-                        <i class="fas fa-bolt" style="font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--black); font-size: 1.5rem; margin-bottom: 1rem;">Vivace</h3>
-                        <p style="font-family: var(--font-serif); font-style: italic;">« Notre force, une équipe dynamique. »</p>
-                    </div>
-                </div>
+            <div class="destacados-content bg-light order-1" data-aos="fade-left">
+                <h2 class="gray">Vision Stratégique</h2>
+                <p class="gray">Accroître durablement la productivité et la sécurité des exploitants miniers et carriers en Afrique de l'Ouest.<br><br>Notre Direction s'appuie sur une équipe d'ingénieurs et d'artificiers chevronnés, recrutés selon des critères d'exigence rigoureux.</p>
             </div>
-
-            <div class="values-section mt-xl text-center reveal">
-                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-transform: uppercase;">Nos Valeurs</h3>
-                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--gray-dark);">Esprit de partage du capital d'expériences accumulées, transmission de valeurs et d'expertise, notion de courage, de détermination et de persévérance.</p>
-                <div class="mt-lg">
-                    <a href="contact.html" class="btn btn-outline-dark">Rejoindre l'aventure <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
         </div>
-    </section>
+        
+        <section class="premium-grid" style="padding-top:80px;">
+            <div class="premium-card" style="text-align:center; padding:40px;">
+                <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--gold); margin-bottom:20px;"></i>
+                <h3 style="margin-bottom:15px;">Zéro Incident</h3>
+                <p style="color:var(--gray-text);">La sécurité est notre ligne directrice absolue dans chaque intervention et manipulation pyrotechnique.</p>
+            </div>
+            <div class="premium-card" style="text-align:center; padding:40px;">
+                <i class="fas fa-leaf" style="font-size: 3rem; color: var(--gold); margin-bottom:20px;"></i>
+                <h3 style="margin-bottom:15px;">Respect de l'Environnement</h3>
+                <p style="color:var(--gray-text);">Minimisation rigoureuse des vibrations, du bruit et de la poussière lors de nos plans de tir.</p>
+            </div>
+            <div class="premium-card" style="text-align:center; padding:40px;">
+                <i class="fas fa-users" style="font-size: 3rem; color: var(--gold); margin-bottom:20px;"></i>
+                <h3 style="margin-bottom:15px;">Capital Humain</h3>
+                <p style="color:var(--gray-text);">Formation continue de nos équipes locales pour garantir l'autonomie et le transfert de compétences.</p>
+            </div>
+        </section>
+</main>
 
-    <!-- Fat Footer -->
-    <footer class="fat-footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <img src="assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL est spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div>
+                    <h4>À PROPOS DE GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Nos Services</a></li>
-                        <li><a href="products.html">Produits & Équipements</a></li>
-                        <li><a href="about.html">Qui sommes-nous ?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Notre entreprise</a></li>
+                        <li><a href="about.html#presence">Présence globale</a></li>
+                        <li><a href="services.html">Technologie</a></li>
+                        <li><a href="about.html#brand">Notre marque</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
+                <div>
+                    <h4>INDUSTRIES & SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Explosifs Civils</a></li>
+                        <li><a href="services.html">Forage & Minage</a></li>
+                        <li><a href="services.html#topographie">Etudes & Modélisation</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Restez informé de nos dernières actualités sur le terrain.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div>
+                    <h4>NOTRE ENGAGEMENT</h4>
+                    <ul>
+                        <li><a href="about.html#safety">Culture de la sécurité</a></li>
+                        <li><a href="about.html#people">Passion pour les hommes</a></li>
+                        <li><a href="about.html#environment">Environnement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="width: 150px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <p>Une entreprise de référence spécialisée dans le forage et le minage civil.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Horaires : Lundi-Vendredi, 08h00-16h00</a>
+                <div>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</div>
+                <div>
+                    <a href="about.html" style="color:var(--gray-text); margin-right: 15px;">Mentions légales</a>
+                    <a href="about.html" style="color:var(--gray-text);">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 50
+                });
+            }
+        });
+    </script>
 </body>
 </html>

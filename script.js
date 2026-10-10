@@ -1,80 +1,71 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu');
-    const navList = document.querySelector('.nav-list');
+document.addEventListener("DOMContentLoaded", () => {
+    const navSwitch = document.getElementById("nav-switch");
+    const navMenu = document.getElementById("nav-menu");
 
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-            navList.classList.toggle('active');
+    if (navSwitch && navMenu) {
+        navSwitch.addEventListener("click", () => {
+            navSwitch.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+        
+        // Close menu when a link is clicked (especially important for mobile and anchor links)
+        const navLinks = navMenu.querySelectorAll("a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navSwitch.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
         });
     }
 
-    // Intersection Observer for Scroll Animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15 // Triggers when 15% of the element is visible
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                // Optional: stop observing once animated to keep it visible
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Select all elements with the .reveal class
-    const revealElements = document.querySelectorAll('.reveal');
-    revealElements.forEach(el => {
-        observer.observe(el);
-    });
-    // Contact Form Mailto Handler
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('contact-name').value;
-            const email = document.getElementById('contact-email').value;
-            const subject = document.getElementById('contact-subject').value;
-            const body = document.getElementById('contact-body').value;
-            
-            const mailtoSubject = encodeURIComponent(subject);
-            const mailtoBody = encodeURIComponent("Nom: " + name + "\nEmail: " + email + "\n\nMessage:\n" + body);
-            
-            window.location.href = "mailto:info@goldeneaglebf.com?subject=" + mailtoSubject + "&body=" + mailtoBody;
-        });
-    }
-
-    // Initialize Swiper Event Gallery
-    if (document.querySelector('.event-slider') && typeof Swiper !== 'undefined') {
-        const swiper = new Swiper('.event-slider', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflowEffect: {
-                rotate: 20,
-                stretch: 0,
-                depth: 200,
-                modifier: 1,
-                slideShadows: true,
-            },
-            loop: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    }
+    // Effet header scroll removed because header is now statically white
 });
+
+    // Map Filtering Logic
+    const filterBtns = document.querySelectorAll('.mapa-filtre button');
+    const mapDots = document.querySelectorAll('.map-dot');
+    const cifraBases = document.getElementById('cifra-bases');
+    const cifraOps = document.getElementById('cifra-ops');
+    
+    if(filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all
+                document.querySelectorAll('.mapa-filtre li').forEach(li => li.classList.remove('active'));
+                btn.parentElement.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                let visibleCount = 0;
+                
+                mapDots.forEach(dot => {
+                    if(filter === 'all' || dot.classList.contains('type-' + filter)) {
+                        dot.style.display = 'block';
+                        // Trigger reflow for animation restart
+                        dot.style.animation = 'none';
+                        void dot.offsetWidth; 
+                        dot.style.animation = 'pulse-gold 2s infinite';
+                        visibleCount++;
+                    } else {
+                        dot.style.display = 'none';
+                    }
+                });
+                
+                                // Update numbers based on filter
+                const baseVal = window.originalBases || '3';
+                const paysVal = window.originalPays || '5';
+                
+                if(filter === 'bases') {
+                    cifraBases.textContent = baseVal;
+                    cifraOps.textContent = '+' + Math.max(1, parseInt(paysVal)-2);
+                }
+                else if(filter === 'mmu') {
+                    cifraBases.textContent = Math.max(1, parseInt(baseVal)-1);
+                    cifraOps.textContent = '+' + Math.max(1, parseInt(paysVal)-3);
+                }
+                else {
+                    cifraBases.textContent = baseVal;
+                    cifraOps.textContent = '+' + paysVal;
+                }
+            });
+        });
+    }

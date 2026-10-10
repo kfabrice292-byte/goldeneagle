@@ -1,253 +1,355 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Eagle | Drilling, Blasting, Explosives</title>
-    <!-- Google Fonts -->
+    <title>Golden Eagle | Beyond Performance — Civil Explosives & Mining Solutions</title>
+    <!-- Google Fonts: Roboto Slab (MAXAM's signature slab-serif) + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles.css">
+    <!-- Custom CSS with cache-busting -->
+    <link rel="stylesheet" href="../styles.css?v=maxam_pure_v13">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/golden-eagle-logo.png">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="../assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- 1. MAXAM Signature Corner Gold Triangle Menu Trigger -->
+    <div class="maxam-corner-notch" id="maxam-corner-notch" title="Main menu">
+        <div class="maxam-corner-notch-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- 2. MAXAM Fullscreen Overlay Navigation Menu (English) -->
+    <div class="maxam-menu-overlay" id="maxam-menu-overlay">
+        <div class="maxam-overlay-header">
+            <div class="maxam-overlay-logo">
+                <img src="../assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 48px; width: auto;">
             </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Our Services</a></li>
-                    <li><a href="products.html" class="nav-link">Products & Equipment</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link btn-header">Contact Us</a></li>
-                    <li class="lang-switcher">
-                        <a href="../index.html">FR</a> | <a href="index.html" class="active">EN</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="maxam-overlay-top-links">
+                <a href="../index.html">FRANÇAIS</a>
+                <span>|</span>
+                <a href="index.html" class="active">ENGLISH</a>
+                <a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a>
+                <button class="maxam-overlay-close-btn" id="maxamMenuCloseBtn">&times; CLOSE</button>
+            </div>
+        </div>
+        <div class="maxam-overlay-content">
+            <div class="maxam-menu-section-grid">
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">ABOUT GOLDEN EAGLE</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="about.html#presence">Global Presence</a></li>
+                        <li><a href="services.html">Technology & R&D</a></li>
+                        <li><a href="about.html#brand">Our Brand</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">INDUSTRIES & SOLUTIONS</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="products.html">Civil Explosives</a></li>
+                        <li><a href="services.html">Drilling & Blasting</a></li>
+                        <li><a href="products.html">Mobile Units (MMU)</a></li>
+                        <li><a href="services.html">Topography & 3D Drones</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">OUR COMMITMENT</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="about.html#safety">Safety Culture</a></li>
+                        <li><a href="about.html#people">Passion for People</a></li>
+                        <li><a href="about.html#ethics">Ethical Behavior</a></li>
+                        <li><a href="about.html#environment">Environmental Protection</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">PRODUCTS & QUOTES</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="products.html">Explosives Catalog</a></li>
+                        <li><a href="products.html">Boosters & Detonators</a></li>
+                        <li><a href="products.html">Request a Quote</a></li>
+                        <li><a href="contact.html">Blaster Technical Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Top Header Bar (Exact MAXAM Corporate Navigation) -->
+    <header class="maxam-header-bar home-header" id="maxamHeaderBar">
+        <div class="maxam-header-inner">
+            <a href="index.html" class="maxam-header-brand-logo" title="Golden Eagle — Home">
+                <img src="../assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 38px; width: auto;">
+            </a>
+            <div class="maxam-header-right-utils">
+                <a href="../index.html">FRANÇAIS</a>
+                <span style="color: #cbd5e1;">|</span>
+                <a href="index.html" class="active">ENGLISH</a>
+                <a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a>
+                <a href="products.html" class="maxam-search-btn" title="View product catalog"><i class="fas fa-search"></i></a>
+            </div>
         </div>
     </header>
 
-    <!-- Fullscreen Hero Immersive -->
-    <section class="hero-immersive">
-        <div class="hero-immersive-bg" style="background-image: url('../assets/acceuil_hero.jpg');"></div>
-        <div class="hero-immersive-overlay"></div>
-        <div class="container hero-immersive-content text-center">
-            <h1 class="hero-immersive-title">GOLDEN EAGLE</h1>
-            <div class="hero-separator"></div>
-            <p class="hero-immersive-subtitle">The Absolute Expertise in Drilling & Blasting</p>
-            <p class="hero-immersive-slogan">"Majestic – Meticulous – Precise – Vivacious"</p>
-            <a href="about.html" class="btn btn-gold mt-lg">Discover our history <i class="fas fa-arrow-right"></i></a>
+    <!-- 4. MAXAM Signature Quarry Hero (Centered Big Logo + Slogan + Subtitle + Button) -->
+    <section class="maxam-hero-stone">
+        <div class="maxam-quarry-bg"></div>
+        <div class="maxam-hero-stone-overlay"></div>
+        <div class="maxam-hero-stone-content">
+            <div class="maxam-hero-big-logo">
+                <img src="../assets/web_829_logo_logo.png" alt="Golden Eagle">
+            </div>
+            <h1 class="maxam-hero-slogan">
+                BEYOND <span class="maxam-red-text">PERFORMANCE</span>
+            </h1>
+            <p class="maxam-hero-subtitle">
+                A leading corporate specialist in energetic materials, mobile manufacturing units (MMU), and civil blasting engineering across West Africa.
+            </p>
+            <div>
+                <a href="about.html" class="btn-maxam-red">
+                    ABOUT GOLDEN EAGLE
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Welcome Section (Clean Onboarding) -->
-    <section class="welcome-section section-padding reveal">
-        <div class="container text-center">
-            <h2 class="section-title-clean">Welcome to <span style="color: var(--gold);">Golden Eagle SARL</span></h2>
+    <!-- 5. MAXAM Showcase Story Module (Sliced Dynamic Showcase) -->
+    <section class="maxam-slider-section">
+        <div class="maxam-slider-row">
+            <div class="maxam-slider-media">
+                <img id="maxamSliderImg" src="../assets/Camion-de-dynamitage-1024x768.jpeg" alt="Golden Eagle Operational Solutions">
+            </div>
+            <div class="maxam-slider-content">
+                <span class="maxam-slider-category" id="maxamSliderCategory">OPERATIONAL SOLUTIONS</span>
+                <h2 class="maxam-slider-title" id="maxamSliderTitle">The Future of Drilling & Blasting in West Africa</h2>
+                <p class="maxam-slider-desc" id="maxamSliderDesc">
+                    Optimize your rock breaking operations with cutting-edge commercial explosives, MMU mobile manufacturing units, and proven fragmentation engineering.
+                </p>
+                <div class="maxam-slider-indicators">
+                    <span class="maxam-slider-dot active" data-slide="0"></span>
+                    <span class="maxam-slider-dot" data-slide="1"></span>
+                    <span class="maxam-slider-dot" data-slide="2"></span>
+                </div>
+                <div>
+                    <a id="maxamSliderBtn" href="services.html" class="btn-maxam-red">DISCOVER OUR SERVICES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. MAXAM Regional Presence & Figures ("Global presence") -->
+    <section class="maxam-presence-section" id="presence">
+        <div class="container">
+            <span class="maxam-venue-label">REGIONAL SITES & INDUSTRIAL IMPACT</span>
+            <h2 class="maxam-presence-title">Regional Presence & Key Figures</h2>
             <div class="gold-line"></div>
-            <p class="welcome-lead reveal delay-100">Strengthening the capabilities of Burkinabe companies through the capitalized experiences of our engineers.</p>
-            <p class="welcome-text reveal delay-200">We are a company specialized in drilling, blasting, manufacturing, and supplying explosive substances. In order to meet international requirements, we support our clients by providing risk assessment studies and infallible safety on every site. <br><br><strong>Golden Eagle has provided all the necessary means for the smooth running of its activities and its assets are: Health, safety and environment, vivacity, expertise, and a dynamic and professional human capital.</strong></p>
-        </div>
-    </section>
-
-    <!-- The 4 Pillars (Symmetrical Grid) -->
-    <section class="pillars-clean section-padding bg-cream">
-        <div class="container">
-            <div class="text-center mb-xl reveal">
-                <h2 class="section-title-clean">Our Core Values</h2>
-                <div class="gold-line"></div>
-            </div>
-            <div class="pillars-grid">
-                <div class="pillar-card reveal">
-                    <div class="pillar-icon"><i class="fas fa-crown"></i></div>
-                    <h3>Majestic</h3>
-                    <p>"We honor our commitment."</p>
-                </div>
-                <div class="pillar-card reveal delay-100">
-                    <div class="pillar-icon"><i class="fas fa-search"></i></div>
-                    <h3>Meticulous</h3>
-                    <p>"We take into account every detail in our projects."</p>
-                </div>
-                <div class="pillar-card reveal delay-200">
-                    <div class="pillar-icon"><i class="fas fa-crosshairs"></i></div>
-                    <h3>Precise</h3>
-                    <p>"Precision is a determining factor in our business."</p>
-                </div>
-                <div class="pillar-card reveal delay-300">
-                    <div class="pillar-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Vivacious</h3>
-                    <p>"Our strength, a dynamic team."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Preview (Clean Cards) -->
-    <section class="services-preview section-padding">
-        <div class="container">
-            <div class="text-center mb-xl reveal">
-                <h2 class="section-title-clean">Overview of our Services</h2>
-                <div class="gold-line"></div>
-            </div>
             
-            <div class="services-preview-grid">
-                <div class="service-preview-card reveal">
-                    <div class="spc-img-wrapper">
-                        <img src="../assets/Camion-de-dynamitage-1024x768.jpeg" alt="Drilling & Blasting">
-                    </div>
-                    <div class="spc-content">
-                        <h3>Drilling & Blasting</h3>
-                        <p>Experienced team and high-performance equipment to meet all your needs safely.</p>
-                        <a href="services.html" class="read-more">Learn more <i class="fas fa-chevron-right"></i></a>
-                    </div>
+            <div class="maxam-venue-tabs" style="margin-top: 2rem;">
+                <span class="maxam-venue-tab active">Headquarters</span>
+                <span class="maxam-venue-tab">Operational Bases</span>
+                <span class="maxam-venue-tab">Mobile Units (MMU)</span>
+                <span class="maxam-venue-tab">Technical Centers</span>
+            </div>
+
+            <div class="maxam-figures-grid">
+                <div class="maxam-figure-card">
+                    <div class="maxam-figure-num">+15</div>
+                    <div class="maxam-figure-label">Years of mining engineering expertise and field mastery</div>
                 </div>
-                <div class="service-preview-card reveal delay-100">
-                    <div class="spc-img-wrapper">
-                        <img src="../assets/citerne.jpg" alt="Substances explosives">
-                    </div>
-                    <div class="spc-content">
-                        <h3>Sale of Explosive Substances</h3>
-                        <p>Sale, manufacturing and supply of explosives in strict compliance with international safety standards.</p>
-                        <a href="services.html" class="read-more">Learn more <i class="fas fa-chevron-right"></i></a>
-                    </div>
+                <div class="maxam-figure-card">
+                    <div class="maxam-figure-num">100%</div>
+                    <div class="maxam-figure-label">Safe detonations compliant with international HSE standards</div>
                 </div>
-                <div class="service-preview-card reveal delay-200">
-                    <div class="spc-img-wrapper">
-                        <img src="../assets/topographie-gps.jpg" alt="Topography" style="object-position: top;">
-                    </div>
-                    <div class="spc-content">
-                        <h3>Topography de Preciseion</h3>
-                        <p>Latest generation equipment for layout works and volume calculations.</p>
-                        <a href="services.html" class="read-more">Learn more <i class="fas fa-chevron-right"></i></a>
-                    </div>
+                <div class="maxam-figure-card">
+                    <div class="maxam-figure-num">3</div>
+                    <div class="maxam-figure-label">Regional operating bases in Burkina Faso & Côte d'Ivoire</div>
+                </div>
+                <div class="maxam-figure-card">
+                    <div class="maxam-figure-num">+500K</div>
+                    <div class="maxam-figure-label">Tons of high-precision fragmented rock delivered</div>
                 </div>
             </div>
-            
-            <div class="text-center mt-xl reveal">
-                <a href="services.html" class="btn btn-outline-dark">See all our services <i class="fas fa-arrow-right"></i></a>
+
+            <div>
+                <a href="contact.html" class="btn-maxam-red" style="padding: 1rem 2.5rem;">
+                    OUR LOCATIONS IN AFRICA
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Event Gallery -->
-    <section class="gallery-section section-padding">
+    <!-- 7. MAXAM Signature 50/50 Split Modules (Technology, People, Safety) -->
+    <section class="maxam-split-section">
+        <!-- Module 1: Technology -->
+        <div class="maxam-split-block dark-slate">
+            <div class="maxam-split-img">
+                <img src="../assets/IMG-20260909-WA0019.jpg" alt="Blasting Technology & Modelling">
+            </div>
+            <div class="maxam-split-content">
+                <span class="maxam-venue-label">INNOVATION & PERFORMANCE</span>
+                <h2>Technology & R&D</h2>
+                <p>
+                    Our energetic materials technological platform integrates the most advanced know-how in the sector. Through 3D blast modeling and customized digital tools, we develop tailored firing plans that maximize rock fragmentation and drastically reduce total operating costs.
+                </p>
+                <div>
+                    <a href="services.html" class="btn-maxam-outline-white">BEST-IN-CLASS PLATFORM</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 2: People (Reversed image on the right) -->
+        <div class="maxam-split-block light-gray reverse">
+            <div class="maxam-split-img">
+                <img src="../assets/equipe-golden-eagle-1024x768.jpeg" alt="Golden Eagle Technical Crew and Shotfirers">
+            </div>
+            <div class="maxam-split-content">
+                <span class="maxam-venue-label">HUMAN CAPITAL</span>
+                <h2>Our People & Passion</h2>
+                <p>
+                    General Management leads a dynamic, disciplined, and highly credentialed technical workforce. Our strength lies in knowledge sharing across all operational tiers, periodic certified trainings, and unwavering dedication to zero-defect execution on every project.
+                </p>
+                <div>
+                    <a href="about.html" class="btn-maxam-red">WHY OUR CREW</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 3: Safety -->
+        <div class="maxam-split-block dark-slate">
+            <div class="maxam-split-img">
+                <img src="../assets/IMG-20260909-WA0017.jpg" alt="Safety Culture and Environment">
+            </div>
+            <div class="maxam-split-content">
+                <span class="maxam-venue-label">UNCOMPROMISING HSE COMMITMENT</span>
+                <h2>Safety: A Way of Life</h2>
+                <p>
+                    Everything we do relies upon the safety and wellbeing of our workforce, clients, and surrounding communities. Golden Eagle strictly enforces a Zero Incident policy and adheres uncompromisingly to international environmental regulations.
+                </p>
+                <div>
+                    <a href="about.html#safety" class="btn-maxam-outline-white">OUR HSE CHARTER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. News & Insights / Field Operational Gallery -->
+    <section class="gallery-section">
         <div class="container">
-            <div class="text-center mb-xl reveal">
-                <h2 class="section-title-clean">Event Gallery</h2>
+            <div style="text-align: center; margin-bottom: 3.5rem;">
+                <p class="maxam-venue-label">ON-BENCH COMMITMENT</p>
+                <h2 style="font-family: var(--font-slab); font-size: 2.4rem; color: #111827;">Field Operations & Case Studies</h2>
                 <div class="gold-line"></div>
-                <p class="welcome-text" style="margin-top: 1.5rem;">Relive our latest interventions and highlights in the field through pictures.</p>
+                <p style="color: #4b5563; font-size: 1.05rem; max-width: 700px; margin: 1rem auto 0;">
+                    Explore our recent field milestones and on-bench interventions: certified shotfirers, heavy intervention fleet, and real-time mining engineering.
+                </p>
             </div>
             
             <div class="event-gallery-grid">
-                <div class="gallery-item item-large reveal">
-                    <img src="../assets/IMG-20260909-WA0017.jpg" alt="Event 1" class="gallery-img">
+                <div class="gallery-item item-large">
+                    <img src="../assets/IMG-20260909-WA0017.jpg" alt="Continuous HSE & Blasting Training" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3 class="event-title">Continuous Training</h3>
-                        <p class="event-desc">Capacity building for our on-site team.</p>
+                        <p class="event-desc">Ongoing capacity building and international HSE credential certification for our on-site crews.</p>
                     </div>
                 </div>
-                <div class="gallery-item reveal delay-100">
-                    <img src="../assets/IMG-20260909-WA0019.jpg" alt="Event 2" class="gallery-img">
+                <div class="gallery-item">
+                    <img src="../assets/IMG-20260909-WA0019.jpg" alt="Bench Blasting Operation" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3 class="event-title">Blasting Operation</h3>
-                        <p class="event-desc">Meticulous preparation before intervention.</p>
+                        <p class="event-desc">Methodical blast hole priming, charging, and safe detonation on the quarry bench.</p>
                     </div>
                 </div>
-                <div class="gallery-item item-tall reveal delay-200">
-                    <img src="../assets/WhatsApp Image 2026-09-09 at 13.03.41.jpeg" alt="Event 3" class="gallery-img">
+                <div class="gallery-item item-tall">
+                    <img src="../assets/WhatsApp Image 2026-09-09 at 13.03.41.jpeg" alt="Field Logistics Fleet" class="gallery-img">
                     <div class="gallery-overlay">
-                        <h3 class="event-title">Logistics</h3>
-                        <p class="event-desc">Deployment of our intervention fleet.</p>
+                        <h3 class="event-title">Fleet & Logistics</h3>
+                        <p class="event-desc">Rapid deployment of our heavy intervention vehicles and secure supply convoys.</p>
                     </div>
                 </div>
-                <div class="gallery-item reveal delay-300">
-                    <img src="../assets/formation.jpg" alt="Event 4" class="gallery-img">
+                <div class="gallery-item">
+                    <img src="../assets/formation.jpg" alt="Practical Safety Workshop" class="gallery-img">
                     <div class="gallery-overlay">
-                        <h3 class="event-title">Practical Workshop</h3>
-                        <p class="event-desc">Training session on international standards.</p>
+                        <h3 class="event-title">Technical Workshop</h3>
+                        <p class="event-desc">Hands-on explosives handling sessions compliant with international safety benchmarks.</p>
                     </div>
                 </div>
-                <div class="gallery-item item-wide reveal delay-400">
-                    <img src="../assets/citerne.jpg" alt="Event 5" class="gallery-img">
+                <div class="gallery-item item-wide">
+                    <img src="../assets/citerne.jpg" alt="Bulk Explosives Delivery" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3 class="event-title">Explosives Supply</h3>
-                        <p class="event-desc">Secure transport of our products.</p>
+                        <p class="event-desc">Specialized escorted transportation and continuous replenishment of mine depots.</p>
                     </div>
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="services.html" class="btn-maxam-red" style="padding: 1rem 3rem;">
+                    VIEW ALL OUR SOLUTIONS
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Fat Footer -->
-    <footer class="fat-footer reveal">
+    <!-- 9. MAXAM Corporate Footer -->
+    <footer class="maxam-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col brand-col reveal delay-100">
-                    <img src="../assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL specializes in drilling, manufacturing, supplying explosives, and blasting services.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <div class="maxam-footer-grid">
+                <div class="maxam-footer-brand">
+                    <img src="../assets/web_829_logo_logo.png" alt="Golden Eagle Logo" style="height: 48px; width: auto;">
+                    <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.5rem; color: #4b5563;">
+                        GOLDEN EAGLE SARL is a benchmark in West Africa for drilling, blasting, commercial explosives manufacturing & supply, and advanced mining services.
+                    </p>
+                    <div style="display: flex; gap: 14px;">
+                        <a href="https://web.facebook.com/melveen11" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col reveal delay-200">
-                    <h4>Navigation</h4>
+                <div class="maxam-footer-col">
+                    <h4>ABOUT GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="products.html">Products & Equipment</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="about.html#presence">Global Presence</a></li>
+                        <li><a href="services.html">Technology & R&D</a></li>
+                        <li><a href="about.html#brand">Our Brand</a></li>
                     </ul>
                 </div>
-                <div class="footer-col reveal delay-300">
-                    <h4>Contact Info</h4>
+                <div class="maxam-footer-col">
+                    <h4>MINING SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Civil Explosives</a></li>
+                        <li><a href="services.html">Drilling & Blasting</a></li>
+                        <li><a href="products.html">Mobile Units (MMU)</a></li>
+                        <li><a href="services.html">3D Topography</a></li>
                     </ul>
                 </div>
-                <div class="footer-col reveal delay-400">
-                    <h4>Newsletter</h4>
-                    <p>Stay informed of our latest news in the field.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div class="maxam-footer-col">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold-dark); margin-right: 8px;"></i> Ouaga 2000, Sector 53</li>
+                        <li><i class="fab fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> (+226) 78 83 90 90</li>
+                        <li><i class="fas fa-envelope" style="color: var(--gold-dark); margin-right: 8px;"></i> info@goldeneaglebf.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom reveal">
+            <div class="maxam-footer-bottom">
                 <p>&copy; 2026 Golden Eagle SARL. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Hours: Monday-Friday, 08:00-16:00</a>
+                <div>
+                    <span style="color: #94a3b8; margin-right: 1.5rem;">HSE Standard: Zero Incident</span>
+                    <a href="contact.html" style="color: var(--gold-dark);">Contact Technical Support</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../script.js"></script>
+    <!-- Scripts -->
+    <script src="../script.js?v=fullwhite_perfect_v10"></script>
 </body>
 </html>

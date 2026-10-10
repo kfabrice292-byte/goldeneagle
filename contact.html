@@ -2,162 +2,236 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Golden Eagle</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golden Eagle | Beyond Performance</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- MAXAM Style Replica CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/golden-eagle-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="page-contact">
+<body>
+
+    <!-- MAXAM Left Nav Switch (Triangle) -->
+    <div class="nav-sidebar">
+        <div class="nav-switch" id="nav-switch" title="Menu de navigation">
+            <div class="nav-switch-inner">
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+                <span class="nav-switch-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The actual menu (hidden by default) -->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-menu-top">
+            <a href="index.html" class="logo-white"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle"></a>
+            <ul class="top-search-white">
+                <li><a href="#">english</a></li>
+                <li><a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-links">
+            <div class="nav-box">
+                <h4>À PROPOS DE GOLDEN EAGLE</h4>
+                <ul>
+                    <li><a href="about.html">Notre Entreprise</a></li>
+                    <li><a href="about.html#presence">Présence Globale</a></li>
+                    <li><a href="services.html">Technologie & R&D</a></li>
+                    <li><a href="about.html#brand">Notre Marque</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>INDUSTRIES & SOLUTIONS</h4>
+                <ul>
+                    <li><a href="products.html">Explosifs Civils</a></li>
+                    <li><a href="services.html">Forage & Minage</a></li>
+                    <li><a href="products.html#mmu">Unités Mobiles MMU</a></li>
+                    <li><a href="services.html#consultation">Ingénierie & Conseil</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>NOTRE ENGAGEMENT</h4>
+                <ul>
+                    <li><a href="about.html#safety">Culture de la Sécurité</a></li>
+                    <li><a href="about.html#people">Passion pour les Hommes</a></li>
+                    <li><a href="about.html#ethics">Comportement Éthique</a></li>
+                    <li><a href="about.html#environment">Protection de l'Environnement</a></li>
+                </ul>
+            </div>
+            <div class="nav-box">
+                <h4>PRODUITS & COTATIONS</h4>
+                <ul>
+                    <li><a href="products.html">Catalogue d'Explosifs</a></li>
+                    <li><a href="products.html">Boosters & Détonateurs</a></li>
+                    <li><a href="products.html">Demande de Cotation</a></li>
+                    <li><a href="contact.html">Support Artificiers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Nos Services</a></li>
-                    <li><a href="products.html" class="nav-link">Produits & Équipements</a></li>
-                    <li><a href="about.html" class="nav-link">Qui sommes-nous?</a></li>
-                    <li><a href="contact.html" class="nav-link active btn-header">Contactez-nous</a></li>
-                    <li class="lang-switcher">
-                        <a href="contact.html" class="active">FR</a> | <a href="en/contact.html">EN</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header bg-white shadow-sm">
+        <div class="top-page">
+            <a href="index.html" class="logo-color"><img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 40px;"></a>
+            <ul class="top-search-color">
+                <li><a href="#" style="color: var(--gray-dark);">ENGLISH</a></li>
+                <li><a href="contact.html" style="color: var(--gray-dark);"><i class="fas fa-globe"></i> CONTACT</a></li>
+                <li><a href="#" style="color: var(--gray-dark);"><i class="fas fa-search"></i></a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Parlons de votre Projet</h1>
-            <p class="page-subtitle">Nos ingénieurs sont prêts à vous accompagner.</p>
-        </div>
-    </section>
+    <main class="main">
+        <section class="head-top" style="height: 60vh;">
+            <div class="video-background">
+                <img src="assets/pano_360_quarry.jpg" style="width:100%; height:100%; object-fit:cover;">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="head-top-content">
+                <h1 class="hero-tagline" style="font-size: 3rem;">CONTACTEZ-NOUS</h1>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section section-padding">
-        <div class="container">
-            <div class="contact-magazine-grid">
-                <div class="contact-info-col reveal">
-                    <h2 class="editorial-title text-black">NOUS JOINDRE</h2>
-                    <div class="gold-line align-left"></div>
-                    <p class="mb-lg" style="font-family: var(--font-serif); font-size: 1.2rem;">Que ce soit pour une demande d'informations, une consultation technique, ou un projet de grande envergure, n'hésitez pas à nous contacter.</p>
+        <div class="destacados-img-text bg-gray-70" data-aos="fade-right">
+            <div class="destacados-img" data-aos="fade-right">
+                <!-- Using a map embedded in the image slot for a cool maxam-like contact layout -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3715.1831933952803!2d-1.4961490631103516!3d12.322710990905762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebf14577d1983%3A0x1dc63d8550fe63f6!2sGolden%20Eagle!5e1!3m2!1sfr!2sbf!4v1789991535924!5m2!1sfr!2sbf" width="100%" height="100%" style="border:0; min-height:400px; filter: grayscale(50%);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="destacados-content bg-dark" data-aos="fade-left">
+                <h2 class="white">Siège & Opérations</h2>
+                <p class="white" style="margin-bottom:15px;"><i class="fas fa-map-marker-alt" style="color:var(--gold); margin-right:10px;"></i> Ouaga 2000, Secteur 53, Ouagadougou, Burkina Faso</p>
+                <p class="white" style="margin-bottom:15px;"><i class="fab fa-whatsapp" style="color:var(--gold); margin-right:10px;"></i> (+226) 78 83 90 90</p>
+                <p class="white" style="margin-bottom:15px;"><i class="fas fa-mobile-alt" style="color:var(--gold); margin-right:10px;"></i> (+226) 70 20 01 52</p>
+                <p class="white" style="margin-bottom:30px;"><i class="fas fa-envelope" style="color:var(--gold); margin-right:10px;"></i> info@goldeneaglebf.com</p>
+                <a href="mailto:info@goldeneaglebf.com" class="btn btn-gold">Envoyer un email</a>
+            </div>
+        </div>
+
+    <section style="max-width: 1200px; margin: 0 auto 80px; padding: 0 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
+            <div data-aos="fade-right">
+                <h3 style="font-family: 'Roboto Slab', serif; font-size: 2rem; color: var(--gray-dark); margin-bottom: 20px;">Parlons de votre projet</h3>
+                <p style="color: var(--gray-text); line-height: 1.6; margin-bottom: 30px;">Nos équipes d'experts sont à votre disposition pour étudier vos besoins en dynamitage, forage et fourniture d'explosifs civils en Afrique de l'Ouest.</p>
+                
+                <div style="margin-bottom: 20px;">
+                    <i class="fas fa-map-marker-alt" style="color: var(--gold); font-size: 1.5rem; width: 30px;"></i>
+                    <span style="font-weight: 600; color: var(--gray-dark);">Siège Social :</span>
+                    <p style="margin-left: 35px; color: var(--gray-text);">Ouagadougou, Burkina Faso</p>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <i class="fas fa-envelope" style="color: var(--gold); font-size: 1.5rem; width: 30px;"></i>
+                    <span style="font-weight: 600; color: var(--gray-dark);">Email :</span>
+                    <p style="margin-left: 35px; color: var(--gray-text);">contact@goldeneagle.com</p>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <i class="fas fa-phone" style="color: var(--gold); font-size: 1.5rem; width: 30px;"></i>
+                    <span style="font-weight: 600; color: var(--gray-dark);">Téléphone :</span>
+                    <p style="margin-left: 35px; color: var(--gray-text);">+226 00 00 00 00</p>
+                </div>
+            </div>
+            
+            <div data-aos="fade-left" style="background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--gray-dark);">Nom complet *</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                    </div>
                     
-                    <div class="contact-detail-box reveal delay-100">
-                        <h4><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Siège Social & Adresse Postale</h4>
-                        <p>Secteur 53 (ex-secteur 15), Ouaga 2000, Route de Pô<br>
-                           (à l'arrière du bureau de la SONABEL)<br>
-                           Ouagadougou, Burkina Faso<br><br>
-                           <i class="fas fa-box" style="color: var(--gold); margin-right: 5px;"></i> 01 BP 6390 Ouagadougou 01 – Burkina Faso
-                        </p>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--gray-dark);">Email professionnel *</label>
+                        <input type="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-family: 'Inter', sans-serif;">
                     </div>
-                    <div class="contact-detail-box reveal delay-200">
-                        <h4><i class="fas fa-phone-alt" style="color: var(--gold); margin-right: 10px;"></i> Téléphones</h4>
-                        <p>(+226) 25 37 53 33<br>
-                           (+226) 78 83 90 90
-                        </p>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--gray-dark);">Sujet</label>
+                        <select name="subject" style="width: 100%; padding: 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-family: 'Inter', sans-serif; background: #fff;">
+                            <option value="Demande de devis">Demande de devis</option>
+                            <option value="Partenariat">Partenariat / Fourniture</option>
+                            <option value="Recrutement">Recrutement</option>
+                            <option value="Autre">Autre demande</option>
+                        </select>
                     </div>
-                    <div class="contact-detail-box reveal delay-300">
-                        <h4><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> Email</h4>
-                        <p>info@goldeneaglebf.com</p>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--gray-dark);">Message *</label>
+                        <textarea name="message" required rows="5" style="width: 100%; padding: 12px; border: 1px solid #e5e7eb; border-radius: 4px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
                     </div>
-                    <div class="contact-detail-box reveal delay-400">
-                        <h4><i class="far fa-clock" style="color: var(--gold); margin-right: 10px;"></i> Horaires d'ouverture</h4>
-                        <p>Du Lundi au Vendredi<br>
-                           de 08h00 à 16h00
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-form-col bg-cream reveal delay-200">
-                    <h3>Envoyer un message</h3>
-                    <form class="magazine-form" id="contact-form">
-                        <div class="form-row">
-                            <input type="text" id="contact-name" placeholder="Votre nom complet" required>
-                            <input type="email" id="contact-email" placeholder="Votre adresse email" required>
-                        </div>
-                        <input type="text" id="contact-subject" placeholder="Objet de votre demande" required>
-                        <textarea id="contact-body" rows="6" placeholder="Veuillez détailler votre projet ou votre demande ici..." required></textarea>
-                        <button type="submit" class="btn btn-gold w-full">Envoyer le message <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
+                    
+                    <button type="submit" class="btn btn-gold" style="width: 100%;">ENVOYER LE MESSAGE</button>
+                    <p style="font-size: 0.8rem; color: #999; margin-top: 15px; text-align: center;">Nous vous répondrons sous 24h ouvrées.</p>
+                </form>
             </div>
         </div>
     </section>
+    
+</main>
 
-    <!-- Map Section -->
-    <section class="map-section reveal delay-300">
-        <div style="width: 100%; line-height: 0;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3715.1831933952803!2d-1.4961490631103516!3d12.322710990905762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebf14577d1983%3A0x1dc63d8550fe63f6!2sGolden%20Eagle!5e1!3m2!1sfr!2sbf!4v1789991535924!5m2!1sfr!2sbf" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-    </section>
-
-    <!-- Fat Footer -->
-    <footer class="fat-footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <img src="assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL est spécialisée dans le forage, la fabrication, la fourniture d'explosifs et les services de dynamitage.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div>
+                    <h4>À PROPOS DE GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Nos Services</a></li>
-                        <li><a href="products.html">Produits & Équipements</a></li>
-                        <li><a href="about.html">Qui sommes-nous ?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Notre entreprise</a></li>
+                        <li><a href="about.html#presence">Présence globale</a></li>
+                        <li><a href="services.html">Technologie</a></li>
+                        <li><a href="about.html#brand">Notre marque</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
+                <div>
+                    <h4>INDUSTRIES & SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Explosifs Civils</a></li>
+                        <li><a href="services.html">Forage & Minage</a></li>
+                        <li><a href="services.html#topographie">Etudes & Modélisation</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Restez informé de nos dernières actualités sur le terrain.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div>
+                    <h4>NOTRE ENGAGEMENT</h4>
+                    <ul>
+                        <li><a href="about.html#safety">Culture de la sécurité</a></li>
+                        <li><a href="about.html#people">Passion pour les hommes</a></li>
+                        <li><a href="about.html#environment">Environnement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/web_829_logo_logo.png" alt="Golden Eagle" style="width: 150px; filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <p>Une entreprise de référence spécialisée dans le forage et le minage civil.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Horaires : Lundi-Vendredi, 08h00-16h00</a>
+                <div>&copy; 2026 Golden Eagle SARL. Tous droits réservés.</div>
+                <div>
+                    <a href="about.html" style="color:var(--gray-text); margin-right: 15px;">Mentions légales</a>
+                    <a href="about.html" style="color:var(--gray-text);">Politique de confidentialité</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 50
+                });
+            }
+        });
+    </script>
 </body>
 </html>

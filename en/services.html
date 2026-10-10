@@ -1,214 +1,364 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Golden Eagle</title>
-    <!-- Google Fonts -->
+    <title>Our Services | Golden Eagle — Civil Blasting & Mining Solutions</title>
+    <!-- Google Fonts: Roboto Slab + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css?v=fullwhite_perfect_v10">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/golden-eagle-logo.png">
 </head>
 <body class="page-services">
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="../assets/golden-eagle-logo.png" alt="Golden Eagle" class="logo-img">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- 1. Corner Gold Triangle Menu Trigger -->
+    <div class="maxam-corner-notch" id="maxam-corner-notch" title="Main menu">
+        <div class="maxam-corner-notch-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- 2. Fullscreen Overlay Navigation Menu -->
+    <div class="maxam-menu-overlay" id="maxam-menu-overlay">
+        <div class="maxam-overlay-header">
+            <div class="maxam-overlay-logo">
+                <img src="../assets/golden-eagle-logo.png" alt="Golden Eagle">
             </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link active">Our Services</a></li>
-                    <li><a href="products.html" class="nav-link">Products & Equipment</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link btn-header">Contact Us</a></li>
-                    <li class="lang-switcher">
-                        <a href="../services.html">FR</a> | <a href="services.html" class="active">EN</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="maxam-overlay-top-links">
+                <a href="../services.html">FRANÇAIS</a>
+                <span>|</span>
+                <a href="services.html" class="active">ENGLISH</a>
+                <a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a>
+                <button class="maxam-overlay-close-btn" id="maxamMenuCloseBtn">&times; CLOSE</button>
+            </div>
+        </div>
+        <div class="maxam-overlay-content">
+            <div class="maxam-menu-section-grid">
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">ABOUT GOLDEN EAGLE</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="about.html#presence">Regional Presence</a></li>
+                        <li><a href="services.html" class="active">Technology & R&D</a></li>
+                        <li><a href="about.html#brand">Our Brand</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">INDUSTRIES & SOLUTIONS</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="products.html">Civil Explosives</a></li>
+                        <li><a href="services.html" class="active">Drilling & Blasting</a></li>
+                        <li><a href="products.html">Mobile Units (MMU)</a></li>
+                        <li><a href="services.html">Topography & 3D Drones</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">OUR COMMITMENT</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="about.html#safety">Safety Culture</a></li>
+                        <li><a href="about.html#people">Passion for People</a></li>
+                        <li><a href="about.html#ethics">Ethical Behavior</a></li>
+                        <li><a href="about.html#environment">Environmental Protection</a></li>
+                    </ul>
+                </div>
+                <div class="maxam-menu-col">
+                    <div class="maxam-menu-col-title">PRODUCTS & QUOTATIONS</div>
+                    <ul class="maxam-menu-links-list">
+                        <li><a href="products.html">Explosives Catalog</a></li>
+                        <li><a href="products.html">Boosters & Detonators</a></li>
+                        <li><a href="products.html">Request a Quote</a></li>
+                        <li><a href="contact.html">Field Technical Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Top Header Bar -->
+    <header class="maxam-header-bar">
+        <div class="maxam-header-inner">
+            <a href="index.html" class="maxam-header-brand-logo" title="Golden Eagle — Home">
+                <img src="../assets/web_829_logo_logo.png" alt="Golden Eagle" style="height: 42px; width: auto;">
+            </a>
+            <ul class="maxam-header-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Our Services</a></li>
+                <li><a href="products.html">Products & Equipment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="maxam-header-right-utils">
+                <a href="../services.html">FR</a>
+                <span style="color: #cbd5e1;">|</span>
+                <a href="services.html" class="active">EN</a>
+                <a href="contact.html"><i class="fas fa-globe"></i> CONTACT</a>
+                <a href="products.html" class="maxam-search-btn" title="Search product catalog"><i class="fas fa-search"></i></a>
+            </div>
         </div>
     </header>
 
-    <!-- Page Header -->
+    <!-- Page Header Banner -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Our Expertise</h1>
-            <p class="page-subtitle">End-to-end industrial solutions.</p>
+            <span class="page-header-category">OPERATIONAL SOLUTIONS & ENGINEERING</span>
+            <h1 class="page-title">Our Services & Solutions</h1>
+            <div class="gold-line"></div>
+            <p class="page-subtitle">
+                End-to-end industrial capabilities: precision drilling, bench blasting, commercial explosives manufacturing and supply, 3D laser profiling, and certified training.
+            </p>
         </div>
     </section>
 
     <!-- Services Detailed List -->
     <section class="services-detailed section-padding">
         <div class="container">
+
             <!-- Service 1 -->
-            <div class="service-row reveal">
+            <div class="service-row reveal" id="forage">
                 <div class="service-row-img">
-                    <img src="../assets/Camion-de-dynamitage-1024x768.jpeg" alt="Drilling & Blasting">
+                    <img src="../assets/Camion-de-dynamitage-1024x768.jpeg" alt="Drilling & Blasting Operations">
                 </div>
                 <div class="service-row-content">
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">CORE CAPABILITY</span>
                     <h2 class="service-title-lg">Drilling & Blasting</h2>
                     <div class="gold-line align-left"></div>
-                    <p>GOLDEN EAGLE provides its clients with an experienced team and high-performance equipment, and uses several proven drilling and blasting techniques to meet all their needs.</p>
+                    <p>
+                        GOLDEN EAGLE deploys highly seasoned shotfirers and modern drilling fleets. We formulate computer-assisted drill and blast patterns engineered for maximum rock fragmentation while maintaining total vibration and flyrock control.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Technical edge:</strong> Rock mass characterization, optimized blast hole spacing, non-electric and electronic initiation, stringent bench safety protocols.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">REQUEST BENCH EVALUATION</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 2 -->
-            <div class="service-row reverse reveal">
+            <div class="service-row reverse reveal" id="substances">
                 <div class="service-row-img">
-                    <img src="../assets/citerne.jpg" alt="Substances explosives">
+                    <img src="../assets/citerne.jpg" alt="Commercial explosives supply and manufacturing">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Supply, Manufacturing & Sale of explosive substances</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">ENERGETIC MATERIALS</span>
+                    <h2 class="service-title-lg">Explosives Supply & Manufacturing</h2>
                     <div class="gold-line align-left"></div>
-                    <p>Depending on the client's request, we sell, deliver and manufacture explosive substances while following best practices, strictly respecting safety standards and technical requirements of the field. <br><br><strong>Supplied and manufactured products:</strong> Booster, Magnum Booster, Ammonium Nitrate, IED Instant Electric Detonator, detonating cords, Splitex, Trun line surface accessories, Anfex, Emulsion S100.</p>
+                    <p>
+                        We manufacture, transport, and supply certified civil explosives conforming to international HSE standards and mine operational requirements across West Africa.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Products supplied:</strong> Matrix Emulsion S100, Porous Prilled Ammonium Nitrate (PPAN), Cast Pentolite Boosters, Instant Electric Detonators (IED), Detonating cords, surface connectors.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="products.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">EXPLORE PRODUCTS CATALOG</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 3 -->
-            <div class="service-row reveal">
+            <div class="service-row reveal" id="consultation">
                 <div class="service-row-img">
-                    <!-- New Image Used Here -->
-                    <img src="../assets/IMG-20260909-WA0017.jpg" alt="Consultation">
+                    <img src="../assets/IMG-20260909-WA0017.jpg" alt="Technical auditing and consulting">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Consultation & Technical Services</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">AUDITING & CONSULTING</span>
+                    <h2 class="service-title-lg">Consultation & Technical Audits</h2>
                     <div class="gold-line align-left"></div>
-                    <p>We periodically evaluate the results of our drilling and blasting works on our partners' sites. These evaluations help improve fragmentation after blasting and optimize the cost/quality ratio.</p>
+                    <p>
+                        Our senior engineers conduct comprehensive post-blast fragmentation and granulometry analyses on partner sites, significantly reducing downstream crushing and haulage costs.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Scope:</strong> Seismograph vibration monitoring, charge-per-delay calibration, powder factor optimization, and boulder reduction strategies.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">BOOK TECHNICAL AUDIT</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 4 -->
-            <div class="service-row reverse reveal">
+            <div class="service-row reverse reveal" id="hse">
                 <div class="service-row-img">
-                    <img src="../assets/formation.jpg" alt="Formation en mine">
+                    <img src="../assets/formation.jpg" alt="HSE and operational risk assessment">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Professional risk assessment</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">SAFETY & HSE</span>
+                    <h2 class="service-title-lg">Professional Risk Assessment</h2>
                     <div class="gold-line align-left"></div>
-                    <p>GOLDEN EAGLE has cutting-edge technology in risk assessment related to performance, operational feasibility and overall site security.</p>
+                    <p>
+                        GOLDEN EAGLE implements rigorous hazard evaluation methodologies covering pyrotechnic handling, operational feasibility, and complete site safety reassurance.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Key areas:</strong> Blast evacuation planning, temporary magazine safety, strict compliance with national mining and environmental regulations.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="about.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">OUR SAFETY CULTURE</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 5 -->
-            <div class="service-row reveal">
+            <div class="service-row reveal" id="topographie">
                 <div class="service-row-img">
-                    <img src="../assets/topographie-gps.jpg" alt="Topography" style="object-position: top;">
+                    <img src="../assets/topographie-gps.jpg" alt="3D Topography and drone surveys">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Topography</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">PRECISION GEOMATICS</span>
+                    <h2 class="service-title-lg">3D Topography & Drone Surveys</h2>
                     <div class="gold-line align-left"></div>
-                    <p>Provision of latest generation topographic equipment to carry out precise survey, layout and volume calculation works.</p>
+                    <p>
+                        Equipped with high-precision total stations, RTK GPS receivers, and photogrammetry drones, our surveyors digitally map bench faces to eliminate flyrock and reconcile blasted tonnage.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Capabilities:</strong> 3D laser face profiling, volume and cubature computation, geological reconciliation, and high-resolution contour mapping.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">REQUEST GEOMATICS SURVEY</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 6 -->
-            <div class="service-row reverse reveal">
+            <div class="service-row reverse reveal" id="formation">
                 <div class="service-row-img">
-                    <!-- New Image Used Here -->
-                    <img src="../assets/WhatsApp%20Image%202026-09-09%20at%2013.03.41.jpeg" alt="Specialized training">
+                    <img src="../assets/WhatsApp Image 2026-09-09 at 13.03.41.jpeg" alt="Specialized blaster training modules">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Specialized training</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">HUMAN CAPITAL</span>
+                    <h2 class="service-title-lg">Specialized Blaster Training</h2>
                     <div class="gold-line align-left"></div>
-                    <p>Training provided by field professionals, combining practical pedagogy and transmission of the latest industry techniques (bench teams, drilling & blasting, HSE, risk management).</p>
+                    <p>
+                        Certified courses led by experienced field engineers, blending hands-on drilling and firing exercises with official credentials recognized across mining jurisdictions.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Modules:</strong> Initiation and hookup best practices, blast safety, misfire neutralization, and safe storage of commercial explosives.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">ENROLL IN TRAINING</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 7 -->
-            <div class="service-row reveal">
+            <div class="service-row reveal" id="logistique">
                 <div class="service-row-img">
-                    <img src="../assets/WhatsApp-Image-2019-09-25-at-16.15.16-1.jpeg" alt="Transport & Logistique">
+                    <img src="../assets/IMG-20260909-WA0019.jpg" alt="Escorted hazardous material logistics">
                 </div>
                 <div class="service-row-content">
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">ESCORTED CONVOYS & ADR</span>
                     <h2 class="service-title-lg">Secure Transport & Logistics</h2>
                     <div class="gold-line align-left"></div>
-                    <p>Secure routing of explosive products and substances from factories or ports to mining sites under armed escort (Police / National Gendarmerie), in strict compliance with current regulations.</p>
+                    <p>
+                        Safe, compliant transport of energetic materials from border hubs and storage magazines directly to mine sites under official security escort (Police / National Gendarmerie).
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Guarantees:</strong> Real-time GPS tracking fleet, certified dangerous goods drivers, full ADR regulatory compliance.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">SCHEDULE SHIPMENT</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Service 8 -->
-            <div class="service-row reverse reveal">
+            <div class="service-row reverse reveal" id="equipements">
                 <div class="service-row-img">
-                    <img src="../assets/citerne.jpg" alt="Vente d'équipements">
+                    <img src="../assets/citerne.jpg" alt="Mining equipment sales and maintenance">
                 </div>
                 <div class="service-row-content">
-                    <h2 class="service-title-lg">Sale of equipment, tools & maintenance</h2>
+                    <span class="page-header-category" style="margin-bottom: 0.5rem;">EQUIPMENT & TOOLING</span>
+                    <h2 class="service-title-lg">Equipment Sales & Maintenance</h2>
                     <div class="gold-line align-left"></div>
-                    <p>Supply of high-quality equipment, pumps, accessories and industrial tools meeting the severe requirements of mining and civil engineering environments. <br><br><strong>Equipment catalog:</strong> Exploders, High-performance blasting tools, Knives, Personal Protective Equipment (PPE), Drones, GPS, Drill tools and parts, Sirens, etc.</p>
+                    <p>
+                        Distribution of certified mining gear, heavy-duty shotfiring tools, and precision measurement equipment built to withstand extreme West African open-pit conditions.
+                    </p>
+                    <p style="font-size: 0.95rem; color: #6b7280;">
+                        <strong>Catalog:</strong> Approved electronic exploders, safety circuit ohmmeters, blast warning sirens, pyrotechnic knives, bench PPE.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="products.html" class="btn-maxam-red" style="padding: 0.75rem 1.75rem; font-size: 0.82rem;">VIEW AVAILABLE GEAR</a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-xl reveal">
-                <a href="contact.html" class="btn btn-gold">Request our services <i class="fas fa-arrow-right"></i></a>
+
+            <!-- Call to action block -->
+            <div style="text-align: center; margin-top: 4.5rem; padding: 4rem 2rem; background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px;">
+                <p class="page-header-category">LOOKING FOR A CUSTOM ENGINEERING SOLUTION?</p>
+                <h2 style="font-family: var(--font-slab); font-size: 2.2rem; color: #111827; margin-bottom: 1rem;">
+                    Accelerate Your Mining Production & Blast Performance
+                </h2>
+                <p style="color: #4b5563; font-size: 1.05rem; max-width: 650px; margin: 0 auto 2rem;">
+                    Our technical directors and certified blasters are on hand to assess your technical specifications and deploy quickly on site.
+                </p>
+                <a href="contact.html" class="btn-maxam-red" style="padding: 1.1rem 3rem;">
+                    CONTACT OUR TECHNICAL TEAM
+                </a>
             </div>
 
         </div>
     </section>
 
-    <!-- Fat Footer -->
-    <footer class="fat-footer">
+    <!-- MAXAM Corporate Footer -->
+    <footer class="maxam-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col brand-col">
-                    <img src="../assets/golden-eagle-logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-desc">GOLDEN EAGLE SARL specializes in drilling, manufacturing, supplying explosives, and blasting services.</p>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/melveen11" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <div class="maxam-footer-grid">
+                <div class="maxam-footer-brand">
+                    <img src="../assets/golden-eagle-logo.png" alt="Golden Eagle Logo">
+                    <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        GOLDEN EAGLE SARL is a West African benchmark in drilling, civil blasting services, commercial explosives manufacturing and supply, and mining engineering.
+                    </p>
+                    <div style="display: flex; gap: 14px;">
+                        <a href="https://web.facebook.com/melveen11" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/godeneagle" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@goldeneaglesarl8811?si=srrhVOIYyCaGlpf0" target="_blank" style="color: #111827; font-size: 1.15rem; transition: color 0.2s;" onmouseover="this.style.color='var(--gold-primary)'" onmouseout="this.style.color='#111827'"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div class="maxam-footer-col">
+                    <h4>ABOUT GOLDEN EAGLE</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="products.html">Products & Equipment</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="about.html#presence">Global Presence</a></li>
+                        <li><a href="services.html">Technology & R&D</a></li>
+                        <li><a href="about.html#brand">Our Brand</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
+                <div class="maxam-footer-col">
+                    <h4>BLASTING SOLUTIONS</h4>
                     <ul>
-                        <li><i class="fas fa-box" style="color: var(--gold); margin-right: 10px;"></i> 01 BP 6390 Ouaga 01</li>
-                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i> Ouaga 2000, Secteur 53</li>
-                        <li><i class="fas fa-phone" style="color: var(--gold); margin-right: 10px;"></i> (+226) 25 37 53 33</li>
-                        <li><i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> info@goldeneaglebf.com</li>
+                        <li><a href="products.html">Civil Explosives</a></li>
+                        <li><a href="services.html">Drilling & Blasting</a></li>
+                        <li><a href="products.html">Mobile Units (MMU)</a></li>
+                        <li><a href="services.html">3D Topography</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Stay informed of our latest news in the field.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div class="maxam-footer-col">
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--gold-dark); margin-right: 8px;"></i> Ouaga 2000, Sector 53</li>
+                        <li><i class="fab fa-whatsapp" style="color: #25D366; margin-right: 8px;"></i> (+226) 78 83 90 90</li>
+                        <li><i class="fas fa-envelope" style="color: var(--gold-dark); margin-right: 8px;"></i> info@goldeneaglebf.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="maxam-footer-bottom">
                 <p>&copy; 2026 Golden Eagle SARL. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Hours: Monday-Friday, 08:00-16:00</a>
+                <div>
+                    <span style="color: #94a3b8; margin-right: 1.5rem;">HSE Standard: Zero Incident</span>
+                    <a href="contact.html" style="color: var(--maxam-red);">Contact Technical Support</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <!-- Scripts -->
+    <script src="../script.js?v=fullwhite_perfect_v10"></script>
 </body>
 </html>

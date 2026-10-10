@@ -1,0 +1,841 @@
+/* --------------------------------------------------------------------------
+   Golden Eagle - Blasting Solutions & Equipment Catalog
+   MAXAM CORP DESIGN SYSTEM - INDUSTRIAL HEAVY CORPORATE STANDARD
+   Colors: Charcoal Dark (#0e1217, #11161d), Pure White (#ffffff), Warm Gray (#f4f6f8),
+   Gold Accent (#cc9933, #b3862c), Crisp Lines, Zero Rounded Pills.
+--------------------------------------------------------------------------- */
+
+/* 1. Control & Filter Bar (MAXAM Corporate Standard) */
+.shop-controls {
+    background: #ffffff;
+    border: 1px solid #dbe1e8;
+    border-top: 3px solid var(--gold);
+    padding: 1.75rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.shop-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.shop-search-box {
+    position: relative;
+    flex: 1;
+    min-width: 280px;
+}
+
+.shop-search-box i {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    font-size: 0.95rem;
+}
+
+.shop-search-box input {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 2.75rem;
+    border-radius: 0px !important;
+    border: 1.5px solid #cbd5e1;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    background: #ffffff;
+    color: #11161d;
+    transition: all 0.2s ease;
+}
+
+.shop-search-box input:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(204, 153, 51, 0.15);
+}
+
+.shop-actions-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.shop-sort-select {
+    padding: 0.85rem 1.25rem;
+    border-radius: 0px !important;
+    border: 1.5px solid #cbd5e1;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    background: #ffffff;
+    color: #11161d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.shop-sort-select:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+/* Quote Trigger Button */
+.btn-quote-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.5rem;
+    background: var(--gold);
+    color: #ffffff !important;
+    border-radius: 0px !important;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 1.5px solid var(--gold);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-quote-cart:hover {
+    background: #b3862c;
+    border-color: #b3862c;
+    box-shadow: 0 4px 15px rgba(204, 153, 51, 0.35);
+}
+
+.cart-counter {
+    background: #11161d;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    min-width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+/* Category Filter Tabs (MAXAM Style) */
+.shop-categories-nav {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+}
+
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.35rem;
+    border-radius: 0px !important;
+    background: #f4f6f8;
+    border: 1px solid #dbe1e8;
+    color: #374151;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.category-pill .pill-count {
+    background: rgba(0, 0, 0, 0.08);
+    color: #4b5563;
+    padding: 2px 7px;
+    font-size: 0.72rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+
+.category-pill:hover {
+    background: #e2e8f0;
+    border-color: #cbd5e1;
+    color: #11161d;
+}
+
+.category-pill.active {
+    background: var(--maxam-red, #D32F2F);
+    color: #ffffff;
+    border-color: var(--maxam-red, #D32F2F);
+    box-shadow: 0 3px 10px rgba(211, 47, 47, 0.25);
+}
+
+.category-pill.active .pill-count {
+    background: #ffffff;
+    color: var(--maxam-red, #D32F2F);
+}
+
+/* 2. Products Grid & Industrial Cards */
+.shop-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.25rem;
+    min-height: 400px;
+}
+
+.shop-card {
+    background: #ffffff;
+    border-radius: 0px !important;
+    overflow: hidden;
+    border: 1px solid #dbe1e8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.shop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+    border-color: var(--maxam-red, #D32F2F);
+}
+
+.shop-card-media {
+    position: relative;
+    height: 240px;
+    background: #0e1217;
+    overflow: hidden;
+}
+
+.shop-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.shop-card:hover .shop-card-media img {
+    transform: scale(1.06);
+}
+
+.shop-card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(14, 18, 23, 0.92);
+    color: #ffffff;
+    border-left: 3px solid var(--maxam-red, #D32F2F);
+    padding: 0.35rem 0.85rem;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.shop-card-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.3rem 0.75rem;
+    border-radius: 0px !important;
+    font-size: 0.68rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+.status-in-stock {
+    background: #065f46;
+    color: #ffffff;
+}
+
+.status-on-demand {
+    background: #1e3a8a;
+    color: #ffffff;
+}
+
+.shop-card-body {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.shop-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.shop-card-category {
+    color: var(--maxam-red, #D32F2F);
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.shop-card-ref {
+    background: #f1f5f9;
+    color: #64748b;
+    padding: 2px 7px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    border: 1px solid #e2e8f0;
+}
+
+.shop-card-title {
+    font-size: 1.25rem;
+    font-family: var(--font-slab);
+    color: #11161d;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.shop-card-desc {
+    font-size: 0.88rem;
+    color: #4b5563;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding: 0.85rem 0;
+    border-top: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.product-features li {
+    font-size: 0.8rem;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.product-features li:last-child {
+    margin-bottom: 0;
+}
+
+.product-features li i {
+    color: var(--maxam-red, #D32F2F);
+    font-size: 0.75rem;
+}
+
+.shop-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.shop-card-actions {
+    display: flex;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.btn-card-details {
+    flex: 1;
+    padding: 0.8rem 0.5rem;
+    background: #ffffff;
+    color: #11161d;
+    border: 1.5px solid #11161d;
+    border-radius: 0px !important;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-card-details:hover {
+    background: #11161d;
+    color: #ffffff;
+}
+
+.btn-card-quote {
+    flex: 1.4;
+    padding: 0.8rem 0.5rem;
+    background: var(--maxam-red, #D32F2F);
+    color: #ffffff;
+    border: 1.5px solid var(--maxam-red, #D32F2F);
+    border-radius: 0px !important;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.btn-card-quote:hover {
+    background: var(--maxam-red-dark, #B71C1C);
+    border-color: var(--maxam-red-dark, #B71C1C);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.35);
+}
+
+
+/* 3. Empty State */
+.shop-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #ffffff;
+    border: 1px solid #dbe1e8;
+    border-top: 3px solid var(--gold);
+}
+
+.shop-empty-state h3 {
+    font-size: 1.6rem;
+    color: #11161d;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.shop-empty-state p {
+    color: #64748b;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* 4. Slide-in Quotation Drawer (B2B RFQ) */
+.quote-drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 18, 23, 0.75);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.quote-drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.quote-drawer {
+    position: fixed;
+    top: 0;
+    right: -550px;
+    width: 520px;
+    max-width: 95vw;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.quote-drawer.active {
+    right: 0;
+}
+
+.quote-drawer-header {
+    padding: 1.5rem 1.75rem;
+    background: #11161d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--gold);
+}
+
+.quote-drawer-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.quote-drawer-header h3 i {
+    color: var(--gold);
+}
+
+.btn-drawer-close {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.btn-drawer-close:hover {
+    color: #ffffff;
+}
+
+.quote-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem 1.75rem;
+    background: #f8fafc;
+}
+
+.quote-items-list {
+    margin-bottom: 2rem;
+}
+
+.quote-item-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 0.75rem;
+    align-items: center;
+    border-radius: 0px !important;
+}
+
+.quote-item-thumb {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    background: #11161d;
+}
+
+.quote-item-info {
+    flex: 1;
+}
+
+.quote-item-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: #11161d;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.quote-item-ref {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 0.4rem;
+}
+
+.quote-qty-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 2px 8px;
+}
+
+.quote-qty-btn {
+    background: none;
+    border: none;
+    color: #11161d;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-qty-btn:hover {
+    color: var(--gold);
+}
+
+.quote-qty-value {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+.btn-item-remove {
+    background: none;
+    border: none;
+    color: #dc2626;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.btn-item-remove:hover {
+    color: #991b1b;
+}
+
+/* Quote Form Section */
+.quote-form-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.quote-form-section h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: #11161d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.quote-form-group {
+    margin-bottom: 0.85rem;
+}
+
+.quote-form-group label {
+    display: block;
+    font-size: 0.75rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #475569;
+    margin-bottom: 0.35rem;
+}
+
+.quote-form-group input,
+.quote-form-group textarea {
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    border-radius: 0px !important;
+    border: 1.5px solid #cbd5e1;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: #11161d;
+    background: #ffffff;
+}
+
+.quote-form-group input:focus,
+.quote-form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.quote-drawer-footer {
+    padding: 1.25rem 1.75rem;
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.btn-send-whatsapp {
+    width: 100%;
+    padding: 0.9rem;
+    background: #25D366;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px !important;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 0.2s ease;
+}
+
+.btn-send-whatsapp:hover {
+    background: #1eb956;
+}
+
+.btn-send-email {
+    width: 100%;
+    padding: 0.85rem;
+    background: #11161d;
+    color: #ffffff;
+    border: 1.5px solid #11161d;
+    border-radius: 0px !important;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 0.2s ease;
+}
+
+.btn-send-email:hover {
+    background: #1f2733;
+}
+
+/* 5. Product Technical Detail Modal */
+.product-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 820px;
+    max-width: 95vw;
+    max-height: 90vh;
+    background: #ffffff;
+    border-radius: 0px !important;
+    border: 1px solid #dbe1e8;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 1.25rem 1.75rem;
+    background: #11161d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.btn-modal-close {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn-modal-close:hover {
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 2rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.modal-product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+}
+
+.modal-product-img {
+    height: 280px;
+    background: #0e1217;
+    overflow: hidden;
+}
+
+.modal-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.85rem;
+}
+
+.modal-specs-table td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #e2e8f0;
+}
+
+.modal-specs-table td:first-child {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #334155;
+    width: 40%;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .shop-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .modal-product-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .shop-products-grid {
+        grid-template-columns: 1fr;
+    }
+    .shop-controls {
+        padding: 1.25rem;
+    }
+    .quote-drawer {
+        width: 100vw;
+    }
+}
