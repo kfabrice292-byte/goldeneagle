@@ -2521,8 +2521,13 @@ html, body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 15px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--gold) #151b23;
+}
+
+@supports (scrollbar-width: thin) {
+    .manual-products-track {
+        scrollbar-width: thin;
+        scrollbar-color: var(--gold) #151b23;
+    }
 }
 
 .manual-products-track::-webkit-scrollbar {
@@ -2613,6 +2618,7 @@ html, body {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
