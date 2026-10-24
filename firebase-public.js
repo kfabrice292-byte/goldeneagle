@@ -17,9 +17,12 @@ async function fetchGlobalStats() {
             window.originalBases = data.bases || "3";
             window.originalPays = data.pays || "5";
             
-            document.getElementById('cifra-bases').textContent = data.bases || "3";
-            document.getElementById('cifra-ops').textContent = "+" + (data.pays || "5");
-            document.getElementById('cifra-secu').textContent = data.secu || "100%";
+            const elBases = document.getElementById('cifra-bases');
+            const elOps = document.getElementById('cifra-ops');
+            const elSecu = document.getElementById('cifra-secu');
+            if (elBases) elBases.textContent = data.bases || "3";
+            if (elOps) elOps.textContent = "+" + (data.pays || "5");
+            if (elSecu) elSecu.textContent = data.secu || "100%";
         }
     } catch(e) {
         console.error("Error fetching stats:", e);
@@ -46,7 +49,7 @@ async function fetchNews() {
             const data = doc.data();
             const li = document.createElement('li');
             li.innerHTML = `
-                <a href="#">
+                <a href="services.html">
                     <img src="${data.image || 'assets/formation.jpg'}" alt="${data.category}" onerror="this.src='assets/formation.jpg'">
                     <div class="text-cont">
                         <h3>${data.category}</h3>

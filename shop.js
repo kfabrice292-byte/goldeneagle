@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const productDetailModal = document.getElementById('product-detail-modal');
     const modalOverlay = document.getElementById('modal-overlay');
     const btnCloseModal = document.getElementById('btn-close-modal');
-    const btnSendWhatsApp = document.getElementById('btn-send-whatsapp');
     const btnSendEmail = document.getElementById('btn-send-email');
 
     // Helper to resolve asset path whether in / or /en/
@@ -224,9 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <button class="btn btn-gold" id="btn-modal-add-quote" style="flex:1;">
                                 Ajouter au Devis
                             </button>
-                            <a href="https://wa.me/22678839090?text=${encodeURIComponent('Bonjour Golden Eagle, je souhaite des informations sur le produit : ' + product.name + ' (' + (product.ref || '') + ')')}" 
-                               target="_blank" class="btn btn-black" style="background:#25D366; border-color:#25D366; color:#fff;">
-                                <i class="fab fa-whatsapp"></i> Échanger sur WhatsApp
+                            <a href="mailto:info@goldeneaglebf.com?subject=${encodeURIComponent('Demande d\'information : ' + product.name)}&body=${encodeURIComponent('Bonjour Golden Eagle, je souhaite des informations sur le produit : ' + product.name + ' (' + (product.ref || '') + ')')}" 
+                               class="btn btn-black">
+                                <i class="fas fa-envelope"></i> Demande par Email
                             </a>
                         </div>
                     </div>
@@ -388,37 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return { name, company, phone, location, notes, items };
     }
 
-    if (btnSendWhatsApp) {
-        btnSendWhatsApp.addEventListener('click', () => {
-            const data = getQuotationPayload();
-            if (data.items.length === 0) {
-                alert('Veuillez ajouter au moins un produit à votre devis.');
-                return;
-            }
 
-            let msg = `*DEMANDE DE DEVIS / COTATION - GOLDEN EAGLE*\n`;
-            msg += `--------------------------------------\n`;
-            msg += `👤 *Client :* ${data.name}\n`;
-            msg += `🏢 *Entreprise / Mine :* ${data.company}\n`;
-            msg += `📞 *Téléphone :* ${data.phone}\n`;
-            msg += `📍 *Site / Localité :* ${data.location}\n`;
-            if (data.notes) msg += `📝 *Notes :* ${data.notes}\n`;
-            msg += `--------------------------------------\n`;
-            msg += `*ARTICLES SÉLECTIONNÉS :*\n`;
-
-            data.items.forEach((item, index) => {
-                msg += `${index + 1}. *${item.product.name}* (${item.product.ref || 'Réf N/A'})\n`;
-                msg += `   Quantité : ${item.quantity}\n`;
-            });
-
-            msg += `--------------------------------------\n`;
-            msg += `Merci de nous transmettre votre meilleure offre de prix et délais de livraison.`;
-
-            const waNumber = '22678839090';
-            const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
-            window.open(url, '_blank');
-        });
-    }
 
     if (btnSendEmail) {
         btnSendEmail.addEventListener('click', () => {
