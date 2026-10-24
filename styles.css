@@ -1098,6 +1098,37 @@ h1, h2, h3, h4, h5 {
 /* === INNER PAGES PREMIUM DESIGN === */
 .hero-inner {
     height: 50vh !important;
+    min-height: 380px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    position: relative;
+}
+.hero-inner .head-top-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 100px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.hero-inner .hero-tagline {
+    font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+.hero-inner .head-top-content h2 {
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 850px;
+}
+@media (max-width: 768px) {
+    .hero-inner .head-top-content {
+        padding: 0 20px;
+    }
 }
 .page-intro {
     padding: 100px 20px 60px;
